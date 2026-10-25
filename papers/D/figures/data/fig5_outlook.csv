@@ -1,0 +1,236 @@
+level,unit_id,unit_name,outcome,token,stat,key,value,display
+unit,AN,Andaman and Nicobar Islands,malaria,oni2026,mean,D.outlook.AN.malaria.oni2026.mean,39.0354783823492,39 (nominal 95% interval 4–88)
+unit,AN,Andaman and Nicobar Islands,malaria,oni2026,lo,D.outlook.AN.malaria.oni2026.lo,4.45166208599983,4
+unit,AN,Andaman and Nicobar Islands,malaria,oni2026,hi,D.outlook.AN.malaria.oni2026.hi,87.8999534664817,88
+unit,AN,Andaman and Nicobar Islands,heat,s20,mean,D.outlook.AN.heat.s20.mean,0.0164677811781467,0.0 (nominal 95% interval 0.0–0.1)
+unit,AN,Andaman and Nicobar Islands,heat,s20,lo,D.outlook.AN.heat.s20.lo,0.0006991599833859,0.0
+unit,AN,Andaman and Nicobar Islands,heat,s20,hi,D.outlook.AN.heat.s20.hi,0.0797708420247384,0.1
+unit,AP_TG,Andhra Pradesh and Telangana,malaria,oni2026,mean,D.outlook.AP_TG.malaria.oni2026.mean,1509.44075984448,"1,509 (nominal 95% interval 164–3,502)"
+unit,AP_TG,Andhra Pradesh and Telangana,malaria,oni2026,lo,D.outlook.AP_TG.malaria.oni2026.lo,164.252924223671,164
+unit,AP_TG,Andhra Pradesh and Telangana,malaria,oni2026,hi,D.outlook.AP_TG.malaria.oni2026.hi,3501.61706932209,"3,502"
+unit,AP_TG,Andhra Pradesh and Telangana,heat,s20,mean,D.outlook.AP_TG.heat.s20.mean,108.195206565851,108.2 (nominal 95% interval 28.9–223.7)
+unit,AP_TG,Andhra Pradesh and Telangana,heat,s20,lo,D.outlook.AP_TG.heat.s20.lo,28.8524390846029,28.9
+unit,AP_TG,Andhra Pradesh and Telangana,heat,s20,hi,D.outlook.AP_TG.heat.s20.hi,223.655078563318,223.7
+unit,AR,Arunachal Pradesh,malaria,oni2026,mean,D.outlook.AR.malaria.oni2026.mean,357.521918001853,358 (nominal 95% interval 36–849)
+unit,AR,Arunachal Pradesh,malaria,oni2026,lo,D.outlook.AR.malaria.oni2026.lo,36.3163691363979,36
+unit,AR,Arunachal Pradesh,malaria,oni2026,hi,D.outlook.AR.malaria.oni2026.hi,848.928965830642,849
+unit,AR,Arunachal Pradesh,heat,s20,mean,D.outlook.AR.heat.s20.mean,0.359294511277253,0.4 (nominal 95% interval 0.1–0.8)
+unit,AR,Arunachal Pradesh,heat,s20,lo,D.outlook.AR.heat.s20.lo,0.0871439853026101,0.1
+unit,AR,Arunachal Pradesh,heat,s20,hi,D.outlook.AR.heat.s20.hi,0.813509493891169,0.8
+unit,AS,Assam,malaria,oni2026,mean,D.outlook.AS.malaria.oni2026.mean,1571.14197122963,"1,571 (nominal 95% interval 151–3,642)"
+unit,AS,Assam,malaria,oni2026,lo,D.outlook.AS.malaria.oni2026.lo,151.375016626368,151
+unit,AS,Assam,malaria,oni2026,hi,D.outlook.AS.malaria.oni2026.hi,3641.97986636314,"3,642"
+unit,AS,Assam,heat,s20,mean,D.outlook.AS.heat.s20.mean,1.76214119215809,1.8 (nominal 95% interval 0.4–3.9)
+unit,AS,Assam,heat,s20,lo,D.outlook.AS.heat.s20.lo,0.443787260696547,0.4
+unit,AS,Assam,heat,s20,hi,D.outlook.AS.heat.s20.hi,3.85220195770211,3.9
+unit,BR,Bihar,malaria,oni2026,mean,D.outlook.BR.malaria.oni2026.mean,232.332583097541,232 (nominal 95% interval 21–524)
+unit,BR,Bihar,malaria,oni2026,lo,D.outlook.BR.malaria.oni2026.lo,20.7727872948518,21
+unit,BR,Bihar,malaria,oni2026,hi,D.outlook.BR.malaria.oni2026.hi,523.66242326204,524
+unit,BR,Bihar,heat,s20,mean,D.outlook.BR.heat.s20.mean,53.6602751775298,53.7 (nominal 95% interval 14.7–111.8)
+unit,BR,Bihar,heat,s20,lo,D.outlook.BR.heat.s20.lo,14.7470460416179,14.7
+unit,BR,Bihar,heat,s20,hi,D.outlook.BR.heat.s20.hi,111.793445735509,111.8
+unit,CH,Chandigarh,malaria,oni2026,mean,D.outlook.CH.malaria.oni2026.mean,8.89291497186397,9 (nominal 95% interval 1–21)
+unit,CH,Chandigarh,malaria,oni2026,lo,D.outlook.CH.malaria.oni2026.lo,0.929363963642438,1
+unit,CH,Chandigarh,malaria,oni2026,hi,D.outlook.CH.malaria.oni2026.hi,21.1096960660447,21
+unit,CH,Chandigarh,heat,s20,mean,D.outlook.CH.heat.s20.mean,0.0426068330018972,0.0 (nominal 95% interval 0.0–0.2)
+unit,CH,Chandigarh,heat,s20,lo,D.outlook.CH.heat.s20.lo,0.0043600992958193,0.0
+unit,CH,Chandigarh,heat,s20,hi,D.outlook.CH.heat.s20.hi,0.176811049547705,0.2
+unit,CG,Chhattisgarh,malaria,oni2026,mean,D.outlook.CG.malaria.oni2026.mean,9283.08816474947,"9,283 (nominal 95% interval 999–20,954)"
+unit,CG,Chhattisgarh,malaria,oni2026,lo,D.outlook.CG.malaria.oni2026.lo,999.249025736774,999
+unit,CG,Chhattisgarh,malaria,oni2026,hi,D.outlook.CG.malaria.oni2026.hi,20953.9711694518,"20,954"
+unit,CG,Chhattisgarh,heat,s20,mean,D.outlook.CG.heat.s20.mean,5.12516698133481,5.1 (nominal 95% interval 1.4–10.7)
+unit,CG,Chhattisgarh,heat,s20,lo,D.outlook.CG.heat.s20.lo,1.43704606058875,1.4
+unit,CG,Chhattisgarh,heat,s20,hi,D.outlook.CG.heat.s20.hi,10.7429722202537,10.7
+unit,DNH_DD,Dadra and Nagar Haveli and Daman and Diu,malaria,oni2026,mean,D.outlook.DNH_DD.malaria.oni2026.mean,111.132368486874,111 (nominal 95% interval 12–264)
+unit,DNH_DD,Dadra and Nagar Haveli and Daman and Diu,malaria,oni2026,lo,D.outlook.DNH_DD.malaria.oni2026.lo,11.5069340574953,12
+unit,DNH_DD,Dadra and Nagar Haveli and Daman and Diu,malaria,oni2026,hi,D.outlook.DNH_DD.malaria.oni2026.hi,263.706008342153,264
+unit,DNH_DD,Dadra and Nagar Haveli and Daman and Diu,heat,s20,mean,D.outlook.DNH_DD.heat.s20.mean,0.049798785066058,0.0 (nominal 95% interval 0.0–0.2)
+unit,DNH_DD,Dadra and Nagar Haveli and Daman and Diu,heat,s20,lo,D.outlook.DNH_DD.heat.s20.lo,0.0026981562303761,0.0
+unit,DNH_DD,Dadra and Nagar Haveli and Daman and Diu,heat,s20,hi,D.outlook.DNH_DD.heat.s20.hi,0.234719021081078,0.2
+unit,DL,Delhi,malaria,oni2026,mean,D.outlook.DL.malaria.oni2026.mean,84.3937227900696,84 (nominal 95% interval 8–203)
+unit,DL,Delhi,malaria,oni2026,lo,D.outlook.DL.malaria.oni2026.lo,8.33203309034792,8
+unit,DL,Delhi,malaria,oni2026,hi,D.outlook.DL.malaria.oni2026.hi,202.643534231767,203
+unit,DL,Delhi,heat,s20,mean,D.outlook.DL.heat.s20.mean,6.32500459230182,6.3 (nominal 95% interval 1.6–13.0)
+unit,DL,Delhi,heat,s20,lo,D.outlook.DL.heat.s20.lo,1.58458073611523,1.6
+unit,DL,Delhi,heat,s20,hi,D.outlook.DL.heat.s20.hi,13.0226116967279,13.0
+unit,GA,Goa,malaria,oni2026,mean,D.outlook.GA.malaria.oni2026.mean,158.093836930678,158 (nominal 95% interval 17–370)
+unit,GA,Goa,malaria,oni2026,lo,D.outlook.GA.malaria.oni2026.lo,16.9852239399979,17
+unit,GA,Goa,malaria,oni2026,hi,D.outlook.GA.malaria.oni2026.hi,370.324952759234,370
+unit,GA,Goa,heat,s20,mean,D.outlook.GA.heat.s20.mean,0.131879934167956,0.1 (nominal 95% interval 0.0–0.3)
+unit,GA,Goa,heat,s20,lo,D.outlook.GA.heat.s20.lo,0.0279352032336018,0.0
+unit,GA,Goa,heat,s20,hi,D.outlook.GA.heat.s20.hi,0.337085466097557,0.3
+unit,GJ,Gujarat,malaria,oni2026,mean,D.outlook.GJ.malaria.oni2026.mean,3051.22998367255,"3,051 (nominal 95% interval 352–7,064)"
+unit,GJ,Gujarat,malaria,oni2026,lo,D.outlook.GJ.malaria.oni2026.lo,351.655469827529,352
+unit,GJ,Gujarat,malaria,oni2026,hi,D.outlook.GJ.malaria.oni2026.hi,7063.58213412224,"7,064"
+unit,GJ,Gujarat,heat,s20,mean,D.outlook.GJ.heat.s20.mean,11.9909783086443,12.0 (nominal 95% interval 3.1–25.8)
+unit,GJ,Gujarat,heat,s20,lo,D.outlook.GJ.heat.s20.lo,3.06166578128537,3.1
+unit,GJ,Gujarat,heat,s20,hi,D.outlook.GJ.heat.s20.hi,25.7586919371652,25.8
+unit,HR,Haryana,malaria,oni2026,mean,D.outlook.HR.malaria.oni2026.mean,541.307583629837,"541 (nominal 95% interval 53–1,280)"
+unit,HR,Haryana,malaria,oni2026,lo,D.outlook.HR.malaria.oni2026.lo,52.8779000500153,53
+unit,HR,Haryana,malaria,oni2026,hi,D.outlook.HR.malaria.oni2026.hi,1279.61724995215,"1,280"
+unit,HR,Haryana,heat,s20,mean,D.outlook.HR.heat.s20.mean,23.7172897682737,23.7 (nominal 95% interval 6.2–49.4)
+unit,HR,Haryana,heat,s20,lo,D.outlook.HR.heat.s20.lo,6.24935607703193,6.2
+unit,HR,Haryana,heat,s20,hi,D.outlook.HR.heat.s20.hi,49.3708509303471,49.4
+unit,HP,Himachal Pradesh,malaria,oni2026,mean,D.outlook.HP.malaria.oni2026.mean,6.77070040931826,7 (nominal 95% interval 1–16)
+unit,HP,Himachal Pradesh,malaria,oni2026,lo,D.outlook.HP.malaria.oni2026.lo,0.73439263295259,1
+unit,HP,Himachal Pradesh,malaria,oni2026,hi,D.outlook.HP.malaria.oni2026.hi,15.9493475577044,16
+unit,HP,Himachal Pradesh,heat,s20,mean,D.outlook.HP.heat.s20.mean,0.400400029236271,0.4 (nominal 95% interval 0.1–0.9)
+unit,HP,Himachal Pradesh,heat,s20,lo,D.outlook.HP.heat.s20.lo,0.0989995733823886,0.1
+unit,HP,Himachal Pradesh,heat,s20,hi,D.outlook.HP.heat.s20.hi,0.909554088457514,0.9
+unit,JK,Jammu and Kashmir (incl. Ladakh),malaria,oni2026,mean,D.outlook.JK.malaria.oni2026.mean,18.8637418966419,19 (nominal 95% interval 2–44)
+unit,JK,Jammu and Kashmir (incl. Ladakh),malaria,oni2026,lo,D.outlook.JK.malaria.oni2026.lo,1.58067773759163,2
+unit,JK,Jammu and Kashmir (incl. Ladakh),malaria,oni2026,hi,D.outlook.JK.malaria.oni2026.hi,44.0258685674254,44
+unit,JK,Jammu and Kashmir (incl. Ladakh),heat,s20,mean,D.outlook.JK.heat.s20.mean,0.456349589816128,0.5 (nominal 95% interval 0.1–1.0)
+unit,JK,Jammu and Kashmir (incl. Ladakh),heat,s20,lo,D.outlook.JK.heat.s20.lo,0.114959626439146,0.1
+unit,JK,Jammu and Kashmir (incl. Ladakh),heat,s20,hi,D.outlook.JK.heat.s20.hi,0.99985134216463,1.0
+unit,JH,Jharkhand,malaria,oni2026,mean,D.outlook.JH.malaria.oni2026.mean,9112.00123952592,"9,112 (nominal 95% interval 949–20,990)"
+unit,JH,Jharkhand,malaria,oni2026,lo,D.outlook.JH.malaria.oni2026.lo,949.469555733162,949
+unit,JH,Jharkhand,malaria,oni2026,hi,D.outlook.JH.malaria.oni2026.hi,20989.6963789644,"20,990"
+unit,JH,Jharkhand,heat,s20,mean,D.outlook.JH.heat.s20.mean,27.7566668841595,27.8 (nominal 95% interval 6.8–56.3)
+unit,JH,Jharkhand,heat,s20,lo,D.outlook.JH.heat.s20.lo,6.79733370011223,6.8
+unit,JH,Jharkhand,heat,s20,hi,D.outlook.JH.heat.s20.hi,56.3186255640368,56.3
+unit,KA,Karnataka,malaria,oni2026,mean,D.outlook.KA.malaria.oni2026.mean,1231.01257346267,"1,231 (nominal 95% interval 117–2,986)"
+unit,KA,Karnataka,malaria,oni2026,lo,D.outlook.KA.malaria.oni2026.lo,116.577053638012,117
+unit,KA,Karnataka,malaria,oni2026,hi,D.outlook.KA.malaria.oni2026.hi,2986.126321972,"2,986"
+unit,KA,Karnataka,heat,s20,mean,D.outlook.KA.heat.s20.mean,2.34018312484425,2.3 (nominal 95% interval 0.7–4.7)
+unit,KA,Karnataka,heat,s20,lo,D.outlook.KA.heat.s20.lo,0.673394841261426,0.7
+unit,KA,Karnataka,heat,s20,hi,D.outlook.KA.heat.s20.hi,4.70837564562926,4.7
+unit,KL,Kerala,malaria,oni2026,mean,D.outlook.KL.malaria.oni2026.mean,133.144131995651,133 (nominal 95% interval 14–302)
+unit,KL,Kerala,malaria,oni2026,lo,D.outlook.KL.malaria.oni2026.lo,13.7882772815123,14
+unit,KL,Kerala,malaria,oni2026,hi,D.outlook.KL.malaria.oni2026.hi,301.936522541203,302
+unit,KL,Kerala,heat,s20,mean,D.outlook.KL.heat.s20.mean,0.434716057397237,0.4 (nominal 95% interval 0.1–1.0)
+unit,KL,Kerala,heat,s20,lo,D.outlook.KL.heat.s20.lo,0.104536926246874,0.1
+unit,KL,Kerala,heat,s20,hi,D.outlook.KL.heat.s20.hi,0.980486095592242,1.0
+unit,LD,Lakshadweep,malaria,oni2026,mean,D.outlook.LD.malaria.oni2026.mean,0.45425541721648,0 (nominal 95% interval 0–1)
+unit,LD,Lakshadweep,malaria,oni2026,lo,D.outlook.LD.malaria.oni2026.lo,0.0424831227906611,0
+unit,LD,Lakshadweep,malaria,oni2026,hi,D.outlook.LD.malaria.oni2026.hi,1.06429527665974,1
+unit,LD,Lakshadweep,heat,s20,mean,D.outlook.LD.heat.s20.mean,0.0090268905331279,0.0 (nominal 95% interval 0.0–0.0)
+unit,LD,Lakshadweep,heat,s20,lo,D.outlook.LD.heat.s20.lo,0.000194852381186,0.0
+unit,LD,Lakshadweep,heat,s20,hi,D.outlook.LD.heat.s20.hi,0.0449791070574752,0.0
+unit,MP,Madhya Pradesh,malaria,oni2026,mean,D.outlook.MP.malaria.oni2026.mean,3028.17196946473,"3,028 (nominal 95% interval 322–6,953)"
+unit,MP,Madhya Pradesh,malaria,oni2026,lo,D.outlook.MP.malaria.oni2026.lo,322.372299367001,322
+unit,MP,Madhya Pradesh,malaria,oni2026,hi,D.outlook.MP.malaria.oni2026.hi,6953.09237239021,"6,953"
+unit,MP,Madhya Pradesh,heat,s20,mean,D.outlook.MP.heat.s20.mean,15.8128590408254,15.8 (nominal 95% interval 4.1–32.5)
+unit,MP,Madhya Pradesh,heat,s20,lo,D.outlook.MP.heat.s20.lo,4.11619917133698,4.1
+unit,MP,Madhya Pradesh,heat,s20,hi,D.outlook.MP.heat.s20.hi,32.5229012635054,32.5
+unit,MH,Maharashtra,malaria,oni2026,mean,D.outlook.MH.malaria.oni2026.mean,4215.32589638884,"4,215 (nominal 95% interval 497–9,952)"
+unit,MH,Maharashtra,malaria,oni2026,lo,D.outlook.MH.malaria.oni2026.lo,497.101110126402,497
+unit,MH,Maharashtra,malaria,oni2026,hi,D.outlook.MH.malaria.oni2026.hi,9952.3883104109,"9,952"
+unit,MH,Maharashtra,heat,s20,mean,D.outlook.MH.heat.s20.mean,40.3910211586571,40.4 (nominal 95% interval 11.3–85.5)
+unit,MH,Maharashtra,heat,s20,lo,D.outlook.MH.heat.s20.lo,11.2510678602436,11.3
+unit,MH,Maharashtra,heat,s20,hi,D.outlook.MH.heat.s20.hi,85.4819398534106,85.5
+unit,MN,Manipur,malaria,oni2026,mean,D.outlook.MN.malaria.oni2026.mean,26.281667886704,26 (nominal 95% interval 2–61)
+unit,MN,Manipur,malaria,oni2026,lo,D.outlook.MN.malaria.oni2026.lo,2.47809477038789,2
+unit,MN,Manipur,malaria,oni2026,hi,D.outlook.MN.malaria.oni2026.hi,61.205760075616,61
+unit,MN,Manipur,heat,s20,mean,D.outlook.MN.heat.s20.mean,0.0328243414072628,0.0 (nominal 95% interval 0.0–0.1)
+unit,MN,Manipur,heat,s20,lo,D.outlook.MN.heat.s20.lo,0.0022560062151786,0.0
+unit,MN,Manipur,heat,s20,hi,D.outlook.MN.heat.s20.hi,0.145180315705252,0.1
+unit,ML,Meghalaya,malaria,oni2026,mean,D.outlook.ML.malaria.oni2026.mean,1275.27302211861,"1,275 (nominal 95% interval 132–2,917)"
+unit,ML,Meghalaya,malaria,oni2026,lo,D.outlook.ML.malaria.oni2026.lo,131.748507349432,132
+unit,ML,Meghalaya,malaria,oni2026,hi,D.outlook.ML.malaria.oni2026.hi,2916.77664694879,"2,917"
+unit,ML,Meghalaya,heat,s20,mean,D.outlook.ML.heat.s20.mean,0.178331733319792,0.2 (nominal 95% interval 0.0–0.5)
+unit,ML,Meghalaya,heat,s20,lo,D.outlook.ML.heat.s20.lo,0.0355094062183866,0.0
+unit,ML,Meghalaya,heat,s20,hi,D.outlook.ML.heat.s20.hi,0.485364387578504,0.5
+unit,MZ,Mizoram,malaria,oni2026,mean,D.outlook.MZ.malaria.oni2026.mean,1384.71473467206,"1,385 (nominal 95% interval 154–3,132)"
+unit,MZ,Mizoram,malaria,oni2026,lo,D.outlook.MZ.malaria.oni2026.lo,153.779704098169,154
+unit,MZ,Mizoram,malaria,oni2026,hi,D.outlook.MZ.malaria.oni2026.hi,3131.63658851877,"3,132"
+unit,MZ,Mizoram,heat,s20,mean,D.outlook.MZ.heat.s20.mean,0.134952695560513,0.1 (nominal 95% interval 0.0–0.3)
+unit,MZ,Mizoram,heat,s20,lo,D.outlook.MZ.heat.s20.lo,0.0269828346676336,0.0
+unit,MZ,Mizoram,heat,s20,hi,D.outlook.MZ.heat.s20.hi,0.340560536322086,0.3
+unit,NL,Nagaland,malaria,oni2026,mean,D.outlook.NL.malaria.oni2026.mean,89.5704565652609,90 (nominal 95% interval 9–204)
+unit,NL,Nagaland,malaria,oni2026,lo,D.outlook.NL.malaria.oni2026.lo,9.27291334532057,9
+unit,NL,Nagaland,malaria,oni2026,hi,D.outlook.NL.malaria.oni2026.hi,203.933072816321,204
+unit,NL,Nagaland,heat,s20,mean,D.outlook.NL.heat.s20.mean,0.0444024796904878,0.0 (nominal 95% interval 0.0–0.2)
+unit,NL,Nagaland,heat,s20,lo,D.outlook.NL.heat.s20.lo,0.0051739555000197,0.0
+unit,NL,Nagaland,heat,s20,hi,D.outlook.NL.heat.s20.hi,0.16483762599498,0.2
+unit,OD,Odisha,malaria,oni2026,mean,D.outlook.OD.malaria.oni2026.mean,17073.5522754764,"17,074 (nominal 95% interval 1,735–38,369)"
+unit,OD,Odisha,malaria,oni2026,lo,D.outlook.OD.malaria.oni2026.lo,1734.76521770967,"1,735"
+unit,OD,Odisha,malaria,oni2026,hi,D.outlook.OD.malaria.oni2026.hi,38368.5042773966,"38,369"
+unit,OD,Odisha,heat,s20,mean,D.outlook.OD.heat.s20.mean,34.2233203484163,34.2 (nominal 95% interval 8.4–67.4)
+unit,OD,Odisha,heat,s20,lo,D.outlook.OD.heat.s20.lo,8.36687568217844,8.4
+unit,OD,Odisha,heat,s20,hi,D.outlook.OD.heat.s20.hi,67.4050826615076,67.4
+unit,PY,Puducherry,malaria,oni2026,mean,D.outlook.PY.malaria.oni2026.mean,4.3878436345075,4 (nominal 95% interval 0–10)
+unit,PY,Puducherry,malaria,oni2026,lo,D.outlook.PY.malaria.oni2026.lo,0.444655193363956,0
+unit,PY,Puducherry,malaria,oni2026,hi,D.outlook.PY.malaria.oni2026.hi,10.1639646860124,10
+unit,PY,Puducherry,heat,s20,mean,D.outlook.PY.heat.s20.mean,0.032243744828333,0.0 (nominal 95% interval 0.0–0.1)
+unit,PY,Puducherry,heat,s20,lo,D.outlook.PY.heat.s20.lo,0.0020297243614025,0.0
+unit,PY,Puducherry,heat,s20,hi,D.outlook.PY.heat.s20.hi,0.149685827203864,0.1
+unit,PB,Punjab,malaria,oni2026,mean,D.outlook.PB.malaria.oni2026.mean,69.6581145356382,70 (nominal 95% interval 7–164)
+unit,PB,Punjab,malaria,oni2026,lo,D.outlook.PB.malaria.oni2026.lo,7.4525972332473,7
+unit,PB,Punjab,malaria,oni2026,hi,D.outlook.PB.malaria.oni2026.hi,163.950125820125,164
+unit,PB,Punjab,heat,s20,mean,D.outlook.PB.heat.s20.mean,54.5727317390857,54.6 (nominal 95% interval 13.2–111.4)
+unit,PB,Punjab,heat,s20,lo,D.outlook.PB.heat.s20.lo,13.2082800110064,13.2
+unit,PB,Punjab,heat,s20,hi,D.outlook.PB.heat.s20.hi,111.418865838695,111.4
+unit,RJ,Rajasthan,malaria,oni2026,mean,D.outlook.RJ.malaria.oni2026.mean,1493.76224639266,"1,494 (nominal 95% interval 132–3,458)"
+unit,RJ,Rajasthan,malaria,oni2026,lo,D.outlook.RJ.malaria.oni2026.lo,132.446553685233,132
+unit,RJ,Rajasthan,malaria,oni2026,hi,D.outlook.RJ.malaria.oni2026.hi,3457.59919119486,"3,458"
+unit,RJ,Rajasthan,heat,s20,mean,D.outlook.RJ.heat.s20.mean,20.0346816139433,20.0 (nominal 95% interval 5.2–40.8)
+unit,RJ,Rajasthan,heat,s20,lo,D.outlook.RJ.heat.s20.lo,5.18557404679346,5.2
+unit,RJ,Rajasthan,heat,s20,hi,D.outlook.RJ.heat.s20.hi,40.7831121428754,40.8
+unit,SK,Sikkim,malaria,oni2026,mean,D.outlook.SK.malaria.oni2026.mean,2.82611965475273,3 (nominal 95% interval 0–7)
+unit,SK,Sikkim,malaria,oni2026,lo,D.outlook.SK.malaria.oni2026.lo,0.280525247572039,0
+unit,SK,Sikkim,malaria,oni2026,hi,D.outlook.SK.malaria.oni2026.hi,6.77304779771837,7
+unit,SK,Sikkim,heat,s20,mean,D.outlook.SK.heat.s20.mean,0.0361522869420777,0.0 (nominal 95% interval 0.0–0.1)
+unit,SK,Sikkim,heat,s20,lo,D.outlook.SK.heat.s20.lo,0.0035584225033288,0.0
+unit,SK,Sikkim,heat,s20,hi,D.outlook.SK.heat.s20.hi,0.137301663101936,0.1
+unit,TN,Tamil Nadu,malaria,oni2026,mean,D.outlook.TN.malaria.oni2026.mean,617.948965038533,"618 (nominal 95% interval 74–1,487)"
+unit,TN,Tamil Nadu,malaria,oni2026,lo,D.outlook.TN.malaria.oni2026.lo,74.3669201004503,74
+unit,TN,Tamil Nadu,malaria,oni2026,hi,D.outlook.TN.malaria.oni2026.hi,1486.55977776743,"1,487"
+unit,TN,Tamil Nadu,heat,s20,mean,D.outlook.TN.heat.s20.mean,4.2087614359992,4.2 (nominal 95% interval 1.1–8.8)
+unit,TN,Tamil Nadu,heat,s20,lo,D.outlook.TN.heat.s20.lo,1.10821657584887,1.1
+unit,TN,Tamil Nadu,heat,s20,hi,D.outlook.TN.heat.s20.hi,8.83039627563472,8.8
+unit,TR,Tripura,malaria,oni2026,mean,D.outlook.TR.malaria.oni2026.mean,1774.53857741985,"1,775 (nominal 95% interval 161–4,034)"
+unit,TR,Tripura,malaria,oni2026,lo,D.outlook.TR.malaria.oni2026.lo,160.861823070292,161
+unit,TR,Tripura,malaria,oni2026,hi,D.outlook.TR.malaria.oni2026.hi,4034.19852774121,"4,034"
+unit,TR,Tripura,heat,s20,mean,D.outlook.TR.heat.s20.mean,1.74174999294787,1.7 (nominal 95% interval 0.5–3.7)
+unit,TR,Tripura,heat,s20,lo,D.outlook.TR.heat.s20.lo,0.478792132435664,0.5
+unit,TR,Tripura,heat,s20,hi,D.outlook.TR.heat.s20.hi,3.74233674941517,3.7
+unit,UP,Uttar Pradesh,malaria,oni2026,mean,D.outlook.UP.malaria.oni2026.mean,7140.83531922613,"7,141 (nominal 95% interval 786–16,504)"
+unit,UP,Uttar Pradesh,malaria,oni2026,lo,D.outlook.UP.malaria.oni2026.lo,785.708962114204,786
+unit,UP,Uttar Pradesh,malaria,oni2026,hi,D.outlook.UP.malaria.oni2026.hi,16504.0100311295,"16,504"
+unit,UP,Uttar Pradesh,heat,s20,mean,D.outlook.UP.heat.s20.mean,73.9688423441051,74.0 (nominal 95% interval 19.1–152.4)
+unit,UP,Uttar Pradesh,heat,s20,lo,D.outlook.UP.heat.s20.lo,19.0681337270959,19.1
+unit,UP,Uttar Pradesh,heat,s20,hi,D.outlook.UP.heat.s20.hi,152.378954283216,152.4
+unit,UK,Uttarakhand,malaria,oni2026,mean,D.outlook.UK.malaria.oni2026.mean,56.5449693421086,57 (nominal 95% interval 7–131)
+unit,UK,Uttarakhand,malaria,oni2026,lo,D.outlook.UK.malaria.oni2026.lo,6.58137250652468,7
+unit,UK,Uttarakhand,malaria,oni2026,hi,D.outlook.UK.malaria.oni2026.hi,131.376483721568,131
+unit,UK,Uttarakhand,heat,s20,mean,D.outlook.UK.heat.s20.mean,0.155024424136794,0.2 (nominal 95% interval 0.0–0.4)
+unit,UK,Uttarakhand,heat,s20,lo,D.outlook.UK.heat.s20.lo,0.03077611837644,0.0
+unit,UK,Uttarakhand,heat,s20,hi,D.outlook.UK.heat.s20.hi,0.389807925266009,0.4
+unit,WB,West Bengal,malaria,oni2026,mean,D.outlook.WB.malaria.oni2026.mean,5813.48384820642,"5,813 (nominal 95% interval 603–13,600)"
+unit,WB,West Bengal,malaria,oni2026,lo,D.outlook.WB.malaria.oni2026.lo,603.212460326746,603
+unit,WB,West Bengal,malaria,oni2026,hi,D.outlook.WB.malaria.oni2026.hi,13600.3713355894,"13,600"
+unit,WB,West Bengal,heat,s20,mean,D.outlook.WB.heat.s20.mean,26.5949710316372,26.6 (nominal 95% interval 6.8–55.0)
+unit,WB,West Bengal,heat,s20,lo,D.outlook.WB.heat.s20.lo,6.84059746759525,6.8
+unit,WB,West Bengal,heat,s20,hi,D.outlook.WB.heat.s20.hi,54.9921560978281,55.0
+national,india,India,malaria,oni2026,mean,D.outlook.india.malaria.oni2026.mean,71516.7339545178,"71,517 (nominal 95% interval 8,417–159,102)"
+national,india,India,malaria,oni2026,lo,D.outlook.india.malaria.oni2026.lo,8417,"8,417"
+national,india,India,malaria,oni2026,hi,D.outlook.india.malaria.oni2026.hi,159102,"159,102"
+national,india,India,malaria,roni2026,mean,D.outlook.india.malaria.roni2026.mean,53700.2507238782,"53,700 (nominal 95% interval 3,659–125,507)"
+national,india,India,malaria,roni2026,lo,D.outlook.india.malaria.roni2026.lo,3659,"3,659"
+national,india,India,malaria,roni2026,hi,D.outlook.india.malaria.roni2026.hi,125507,"125,507"
+national,india,India,malaria,oni2027,mean,D.outlook.india.malaria.oni2027.mean,35012.5081523101,"35,013 (nominal 95% interval −18,511 to 98,212)"
+national,india,India,malaria,oni2027,lo,D.outlook.india.malaria.oni2027.lo,-18511,"−18,511"
+national,india,India,malaria,oni2027,hi,D.outlook.india.malaria.oni2027.hi,98212,"98,212"
+national,india,India,malaria,roni2027,mean,D.outlook.india.malaria.roni2027.mean,27473.2203333414,"27,473 (nominal 95% interval −15,641 to 81,360)"
+national,india,India,malaria,roni2027,lo,D.outlook.india.malaria.roni2027.lo,-15641,"−15,641"
+national,india,India,malaria,roni2027,hi,D.outlook.india.malaria.roni2027.hi,81360,"81,360"
+national,india,India,malaria,oni2026final,mean,D.outlook.india.malaria.oni2026final.mean,,not yet available (August–October 2026 traditional ONI not published)
+national,india,India,malaria,oni2026final,lo,D.outlook.india.malaria.oni2026final.lo,,not yet available (August–October 2026 traditional ONI not published)
+national,india,India,malaria,oni2026final,hi,D.outlook.india.malaria.oni2026final.hi,,not yet available (August–October 2026 traditional ONI not published)
+national,india,India,heat,s15,mean,D.outlook.india.heat.s15.mean,364.266223001308,364 (nominal 95% interval 107–694)
+national,india,India,heat,s15,lo,D.outlook.india.heat.s15.lo,107,107
+national,india,India,heat,s15,hi,D.outlook.india.heat.s15.hi,694,694
+national,india,India,heat,s20,mean,D.outlook.india.heat.s20.mean,514.936323418274,"515 (nominal 95% interval 144–1,008)"
+national,india,India,heat,s20,lo,D.outlook.india.heat.s20.lo,144,144
+national,india,India,heat,s20,hi,D.outlook.india.heat.s20.hi,1008,"1,008"
+national,india,India,heat,s25,mean,D.outlook.india.heat.s25.mean,683.454375804597,"683 (nominal 95% interval 184–1,362)"
+national,india,India,heat,s25,lo,D.outlook.india.heat.s25.lo,184,184
+national,india,India,heat,s25,hi,D.outlook.india.heat.s25.hi,1362,"1,362"
+national,india,India,heat,obs,mean,D.outlook.india.heat.obs.mean,,not yet observed (DJF 2026–27 traditional ONI not published)
+national,india,India,heat,obs,lo,D.outlook.india.heat.obs.lo,,not yet observed (DJF 2026–27 traditional ONI not published)
+national,india,India,heat,obs,hi,D.outlook.india.heat.obs.hi,,not yet observed (DJF 2026–27 traditional ONI not published)
+enso,,,,oni_jjas2026,,D.outlook.enso.oni_jjas2026,1.78333333333333,+1.78
+enso,,,,roni_jjas2026,,D.outlook.enso.roni_jjas2026,1.34,+1.34
+enso,,,,oni_djf2027,,D.outlook.enso.oni_djf2027,,not yet published
+enso,,,,basis_text,,D.outlook.basis_text,"The malaria layer is the projection of the companion state-panel malaria analysis at the provisional June–September 2026 traditional ONI of +1.78 °C and RONI of +1.34 °C (the mean of the May–July, June–August and July–September 2026 seasons; the August–October season had not been published). The heat layer gives the scenarios of the companion state-panel heat analysis for a December–February 2026–27 traditional ONI of +1.5, +2.0 and +2.5 °C, because that season had not been published; these values are scenarios and are provisional. Both layers give expected excess recorded counts under a common national El Niño association, distributed by each unit's baseline burden; they are model-based extrapolations, not state-specific sensitivities. ENSO values are those published up to the July–September 2026 season.","The malaria layer is the projection of the companion state-panel malaria analysis at the provisional June–September 2026 traditional ONI of +1.78 °C and RONI of +1.34 °C (the mean of the May–July, June–August and July–September 2026 seasons; the August–October season had not been published). The heat layer gives the scenarios of the companion state-panel heat analysis for a December–February 2026–27 traditional ONI of +1.5, +2.0 and +2.5 °C, because that season had not been published; these values are scenarios and are provisional. Both layers give expected excess recorded counts under a common national El Niño association, distributed by each unit's baseline burden; they are model-based extrapolations, not state-specific sensitivities. ENSO values are those published up to the July–September 2026 season."

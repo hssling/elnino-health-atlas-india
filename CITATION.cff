@@ -1,0 +1,57 @@
+cff-version: 1.2.0
+message: "If you use this code, data or the atlas, please cite the paper (citation to follow on publication) and this repository."
+title: "El Niño Health Vulnerability Atlas of India: code, results contract and aggregate data"
+version: 1.0.0
+date-released: "2026-10-25"
+license: MIT
+repository-code: "https://github.com/hssling/elnino-health-atlas-india"
+url: "https://hssling.github.io/elnino-health-atlas-india/"
+type: software
+authors:
+  - family-names: "Siddalingaiah"
+    given-names: "H S"
+    orcid: "https://orcid.org/0000-0002-4771-8285"
+    affiliation: "Department of Community Medicine, Shridevi Institute of Medical Sciences and Research Hospital, Tumakuru, Karnataka, India"
+keywords:
+  - El Niño–Southern Oscillation
+  - Relative Oceanic Niño Index
+  - early warning
+  - forecast verification
+  - composite risk index
+  - malaria
+  - heat mortality
+  - systematic review
+  - India
+  - climate and health
+abstract: >-
+  Code, results and aggregate data of a pre-specified synthesis of El Niño and health in India: a pooled
+  comparison of the traditional ONI, RONI and the Niño-3.4 anomaly across malaria, dengue and recorded heat
+  deaths; a hindcast with ENSO forecasts issued before each season; a State El Niño Health Risk Index for 34
+  state-level units with Monte Carlo rank intervals; the consolidated 2026–27 outlook; a rapid systematic
+  review; and the El Niño Health Vulnerability Atlas of India (docs/index.html). No record-level data are
+  included.
+references:
+  - type: software
+    title: "El Niño and malaria across Indian states, 2002–2025: data and code"
+    authors:
+      - family-names: "Siddalingaiah"
+        given-names: "H S"
+    version: 1.0.0
+    doi: 10.5281/zenodo.23424043
+    repository-code: "https://github.com/hssling/elnino-malaria-india"
+  - type: software
+    title: "El Niño, local climate and child health in India (NFHS-4 and NFHS-5): code and aggregate data"
+    authors:
+      - family-names: "Siddalingaiah"
+        given-names: "H S"
+    version: 1.0.0
+    doi: 10.5281/zenodo.23599461
+    repository-code: "https://github.com/hssling/elnino-child-india"
+  - type: software
+    title: "El Niño, heat extremes, drought and mortality in India, 2001–2024: data and code"
+    authors:
+      - family-names: "Siddalingaiah"
+        given-names: "H S"
+    version: 1.0.0
+    doi: 10.5281/zenodo.23556278
+    repository-code: "https://github.com/hssling/elnino-heat-india"

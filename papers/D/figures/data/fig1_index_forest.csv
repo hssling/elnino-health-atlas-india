@@ -1,0 +1,95 @@
+panel,outcome,index,stat,key,value,display
+association,malaria,oni,std_effect,D.idx.malaria.oni.std_effect,1.0838229131335,1.08 (95% CI 1.01–1.16)
+association,malaria,oni,lo,D.idx.malaria.oni.lo,1.00868837901581,1.01
+association,malaria,oni,hi,D.idx.malaria.oni.hi,1.16455402032025,1.16
+association,malaria,roni,std_effect,D.idx.malaria.roni.std_effect,1.08278713834316,1.08 (95% CI 1.00–1.17)
+association,malaria,roni,lo,D.idx.malaria.roni.lo,1.00108477119061,1.00
+association,malaria,roni,hi,D.idx.malaria.roni.hi,1.17115754899256,1.17
+association,malaria,nino34,std_effect,D.idx.malaria.nino34.std_effect,1.08214998779826,1.08 (95% CI 1.01–1.17)
+association,malaria,nino34,lo,D.idx.malaria.nino34.lo,1.00503628820275,1.01
+association,malaria,nino34,hi,D.idx.malaria.nino34.hi,1.1651804117301,1.17
+association,dengue,oni,std_effect,D.idx.dengue.oni.std_effect,1.17380778799278,1.17 (95% CI 1.01–1.37)
+association,dengue,oni,lo,D.idx.dengue.oni.lo,1.00856094092306,1.01
+association,dengue,oni,hi,D.idx.dengue.oni.hi,1.36612937031993,1.37
+association,dengue,roni,std_effect,D.idx.dengue.roni.std_effect,1.15139081827096,1.15 (95% CI 1.00–1.33)
+association,dengue,roni,lo,D.idx.dengue.roni.lo,0.996276964773728,1.00
+association,dengue,roni,hi,D.idx.dengue.roni.hi,1.3306548914335,1.33
+association,dengue,nino34,std_effect,D.idx.dengue.nino34.std_effect,1.18851436116599,1.19 (95% CI 1.03–1.38)
+association,dengue,nino34,lo,D.idx.dengue.nino34.lo,1.02646255987314,1.03
+association,dengue,nino34,hi,D.idx.dengue.nino34.hi,1.37614993660594,1.38
+association,heat,oni,std_effect,D.idx.heat.oni.std_effect,1.2241967155221,1.22 (95% CI 1.05–1.42)
+association,heat,oni,lo,D.idx.heat.oni.lo,1.05498832884717,1.05
+association,heat,oni,hi,D.idx.heat.oni.hi,1.42054424425031,1.42
+association,heat,roni,std_effect,D.idx.heat.roni.std_effect,1.12702278240523,1.13 (95% CI 0.93–1.36)
+association,heat,roni,lo,D.idx.heat.roni.lo,0.934649058380886,0.93
+association,heat,roni,hi,D.idx.heat.roni.hi,1.35899174205642,1.36
+association,heat,nino34,std_effect,D.idx.heat.nino34.std_effect,1.16971732711545,1.17 (95% CI 0.99–1.38)
+association,heat,nino34,lo,D.idx.heat.nino34.lo,0.994140983588424,0.99
+association,heat,nino34,hi,D.idx.heat.nino34.hi,1.37630240372482,1.38
+association,malaria_lag1,oni,std_effect,D.idx.malaria_lag1.oni.std_effect,1.03977133843112,1.04 (95% CI 0.98–1.11)
+association,malaria_lag1,oni,lo,D.idx.malaria_lag1.oni.lo,0.976811613935462,0.98
+association,malaria_lag1,oni,hi,D.idx.malaria_lag1.oni.hi,1.10678908890848,1.11
+association,malaria_lag1,roni,std_effect,D.idx.malaria_lag1.roni.std_effect,1.03851045319066,1.04 (95% CI 0.97–1.11)
+association,malaria_lag1,roni,lo,D.idx.malaria_lag1.roni.lo,0.9745408528508,0.97
+association,malaria_lag1,roni,hi,D.idx.malaria_lag1.roni.hi,1.10667906658952,1.11
+association,malaria_lag1,nino34,std_effect,D.idx.malaria_lag1.nino34.std_effect,1.03758961901345,1.04 (95% CI 0.97–1.10)
+association,malaria_lag1,nino34,lo,D.idx.malaria_lag1.nino34.lo,0.974572465608676,0.97
+association,malaria_lag1,nino34,hi,D.idx.malaria_lag1.nino34.hi,1.10468154547347,1.10
+association,dengue_lag1,oni,std_effect,D.idx.dengue_lag1.oni.std_effect,1.08427976421728,1.08 (95% CI 0.95–1.23)
+association,dengue_lag1,oni,lo,D.idx.dengue_lag1.oni.lo,0.954798932665778,0.95
+association,dengue_lag1,oni,hi,D.idx.dengue_lag1.oni.hi,1.23131956568977,1.23
+association,dengue_lag1,roni,std_effect,D.idx.dengue_lag1.roni.std_effect,1.0973610258716,1.10 (95% CI 0.97–1.24)
+association,dengue_lag1,roni,lo,D.idx.dengue_lag1.roni.lo,0.972605090800202,0.97
+association,dengue_lag1,roni,hi,D.idx.dengue_lag1.roni.hi,1.23811938935177,1.24
+association,dengue_lag1,nino34,std_effect,D.idx.dengue_lag1.nino34.std_effect,1.10837701649871,1.11 (95% CI 0.98–1.26)
+association,dengue_lag1,nino34,lo,D.idx.dengue_lag1.nino34.lo,0.9783599493773,0.98
+association,dengue_lag1,nino34,hi,D.idx.dengue_lag1.nino34.hi,1.25567242555716,1.26
+association,bw,oni,std_effect,D.idx.bw.oni.std_effect,-2.20691591690693,−2.2 (95% CI −6.1 to 1.7)
+association,bw,oni,lo,D.idx.bw.oni.lo,-6.0882695942718,−6.1
+association,bw,oni,hi,D.idx.bw.oni.hi,1.67443776045794,1.7
+association,bw,roni,std_effect,D.idx.bw.roni.std_effect,-2.84127422302039,−2.8 (95% CI −7.8 to 2.1)
+association,bw,roni,lo,D.idx.bw.roni.lo,-7.78808995688647,−7.8
+association,bw,roni,hi,D.idx.bw.roni.hi,2.10554151084569,2.1
+association,bw,nino34,std_effect,D.idx.bw.nino34.std_effect,-2.34576842959739,−2.3 (95% CI −6.5 to 1.8)
+association,bw,nino34,lo,D.idx.bw.nino34.lo,-6.47281067345344,−6.5
+association,bw,nino34,hi,D.idx.bw.nino34.hi,1.78127381425865,1.8
+association,haz2459,oni,std_effect,D.idx.haz2459.oni.std_effect,0.022623173438832,0.023 (95% CI 0.008–0.037)
+association,haz2459,oni,lo,D.idx.haz2459.oni.lo,0.0084146217236858,0.008
+association,haz2459,oni,hi,D.idx.haz2459.oni.hi,0.0368317251539783,0.037
+association,haz2459,roni,std_effect,D.idx.haz2459.roni.std_effect,0.0231412899152667,0.023 (95% CI 0.008–0.038)
+association,haz2459,roni,lo,D.idx.haz2459.roni.lo,0.00829430877382945,0.008
+association,haz2459,roni,hi,D.idx.haz2459.roni.hi,0.0379882710567039,0.038
+association,haz2459,nino34,std_effect,D.idx.haz2459.nino34.std_effect,0.0218409850286912,0.022 (95% CI 0.008–0.036)
+association,haz2459,nino34,lo,D.idx.haz2459.nino34.lo,0.00787223434191617,0.008
+association,haz2459,nino34,hi,D.idx.haz2459.nino34.hi,0.0358097357154662,0.036
+skill_within,malaria,roni_vs_oni,skill_diff,D.idx.malaria.roni_vs_oni.skill_diff,-0.00545303316319601,−0.005
+skill_within,dengue,roni_vs_oni,skill_diff,D.idx.dengue.roni_vs_oni.skill_diff,-0.00088235831695993,−0.001
+skill_within,heat,roni_vs_oni,skill_diff,D.idx.heat.roni_vs_oni.skill_diff,0.00577610233830894,+0.006
+skill_pooled,pooled,roni_vs_oni,est,D.idx.pooled.roni_vs_oni.skill_diff.est,-0.000186429713948999,0.000 (95% CI −0.014 to 0.014)
+skill_pooled,pooled,roni_vs_oni,lo,D.idx.pooled.roni_vs_oni.skill_diff.lo,-0.0142139153498518,−0.014
+skill_pooled,pooled,roni_vs_oni,hi,D.idx.pooled.roni_vs_oni.skill_diff.hi,0.0138410559219538,0.014
+skill_pooled,pooled,roni_vs_oni,k,D.idx.pooled.roni_vs_oni.skill_diff.k,3,3
+effect_pooled_rho0,pooled,roni_vs_oni,est,D.idx.pooled.roni_vs_oni.effect_diff.est,-0.0153183275886377,−0.015 (95% CI −0.103 to 0.073)
+effect_pooled_rho0,pooled,roni_vs_oni,lo,D.idx.pooled.roni_vs_oni.effect_diff.lo,-0.103497064993336,−0.103
+effect_pooled_rho0,pooled,roni_vs_oni,hi,D.idx.pooled.roni_vs_oni.effect_diff.hi,0.0728604098160602,0.073
+effect_pooled_rho08,pooled,roni_vs_oni,est,D.idx.pooled.roni_vs_oni.effect_diff.rho08.est,-0.0145900290287359,−0.015 (95% CI −0.055 to 0.025)
+effect_pooled_rho08,pooled,roni_vs_oni,lo,D.idx.pooled.roni_vs_oni.effect_diff.rho08.lo,-0.0545061021958505,−0.055
+effect_pooled_rho08,pooled,roni_vs_oni,hi,D.idx.pooled.roni_vs_oni.effect_diff.rho08.hi,0.0253260441383787,0.025
+direction,pooled,roni_vs_oni,direction,D.idx.pooled.roni_vs_oni.direction,CI includes 0,CI includes 0
+skill_within,malaria,nino34_vs_oni,skill_diff,D.idx.malaria.nino34_vs_oni.skill_diff,-0.000874438947842004,−0.001
+skill_within,dengue,nino34_vs_oni,skill_diff,D.idx.dengue.nino34_vs_oni.skill_diff,0.000469551818859992,0.000
+skill_within,heat,nino34_vs_oni,skill_diff,D.idx.heat.nino34_vs_oni.skill_diff,0.000855595464375969,+0.001
+skill_pooled,pooled,nino34_vs_oni,est,D.idx.pooled.nino34_vs_oni.skill_diff.est,0.000150236111797986,0.000 (95% CI −0.002 to 0.002)
+skill_pooled,pooled,nino34_vs_oni,lo,D.idx.pooled.nino34_vs_oni.skill_diff.lo,-0.00210572019551046,−0.002
+skill_pooled,pooled,nino34_vs_oni,hi,D.idx.pooled.nino34_vs_oni.skill_diff.hi,0.00240619241910643,0.002
+skill_pooled,pooled,nino34_vs_oni,k,D.idx.pooled.nino34_vs_oni.skill_diff.k,3,3
+effect_pooled_rho0,pooled,nino34_vs_oni,est,D.idx.pooled.nino34_vs_oni.effect_diff.est,-0.00585247435474832,−0.006 (95% CI −0.091 to 0.080)
+effect_pooled_rho0,pooled,nino34_vs_oni,lo,D.idx.pooled.nino34_vs_oni.effect_diff.lo,-0.0912396722723558,−0.091
+effect_pooled_rho0,pooled,nino34_vs_oni,hi,D.idx.pooled.nino34_vs_oni.effect_diff.hi,0.0795347235628592,0.080
+effect_pooled_rho08,pooled,nino34_vs_oni,est,D.idx.pooled.nino34_vs_oni.effect_diff.rho08.est,-0.0057710737855536,−0.006 (95% CI −0.044 to 0.032)
+effect_pooled_rho08,pooled,nino34_vs_oni,lo,D.idx.pooled.nino34_vs_oni.effect_diff.rho08.lo,-0.0440311359064273,−0.044
+effect_pooled_rho08,pooled,nino34_vs_oni,hi,D.idx.pooled.nino34_vs_oni.effect_diff.rho08.hi,0.0324889883353201,0.032
+direction,pooled,nino34_vs_oni,direction,D.idx.pooled.nino34_vs_oni.direction,CI includes 0,CI includes 0
+verdict,pooled,,verdict,D.idx.verdict,no index clearly preferred,no index clearly preferred
+verdict,pooled,,verdict_basis,D.idx.verdict_basis,skill,pooled LOEO MALE difference
+verdict,pooled,,k_skill,D.idx.k_skill,3,3

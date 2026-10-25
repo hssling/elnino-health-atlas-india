@@ -1,0 +1,103 @@
+unit_id,unit_name,domain,status,heat_structural_zero,key,value,display
+AN,Andaman and Nicobar Islands,hazard,NA by rule (no rainfall hazard),False,D.risk.AN.hazard,,NA by rule
+AN,Andaman and Nicobar Islands,burden,NA by rule (no rainfall hazard),False,D.risk.AN.burden,0.301586412216923,0.30
+AN,Andaman and Nicobar Islands,vuln,NA by rule (no rainfall hazard),False,D.risk.AN.vuln,0.408069194381529,0.41
+AP_TG,Andhra Pradesh and Telangana,hazard,ranked,False,D.risk.AP_TG.hazard,0.587534799040198,0.59
+AP_TG,Andhra Pradesh and Telangana,burden,ranked,False,D.risk.AP_TG.burden,0.492102275922543,0.49
+AP_TG,Andhra Pradesh and Telangana,vuln,ranked,False,D.risk.AP_TG.vuln,0.31322934328641,0.31
+AR,Arunachal Pradesh,hazard,ranked,True,D.risk.AR.hazard,0.158723321006131,0.16
+AR,Arunachal Pradesh,burden,ranked,True,D.risk.AR.burden,0.534789174355662,0.53
+AR,Arunachal Pradesh,vuln,ranked,True,D.risk.AR.vuln,0.555886824295595,0.56
+AS,Assam,hazard,ranked,True,D.risk.AS.hazard,0.158411579765358,0.16
+AS,Assam,burden,ranked,True,D.risk.AS.burden,0.42134633282604,0.42
+AS,Assam,vuln,ranked,True,D.risk.AS.vuln,0.58259454008356,0.58
+BR,Bihar,hazard,ranked,False,D.risk.BR.hazard,0.698505192231642,0.70
+BR,Bihar,burden,ranked,False,D.risk.BR.burden,0.47696591831664,0.48
+BR,Bihar,vuln,ranked,False,D.risk.BR.vuln,0.734554455794362,0.73
+CH,Chandigarh,hazard,ranked,False,D.risk.CH.hazard,0.768823500571084,0.77
+CH,Chandigarh,burden,ranked,False,D.risk.CH.burden,0.297373681667692,0.30
+CH,Chandigarh,vuln,ranked,False,D.risk.CH.vuln,0.31989285780556,0.32
+CG,Chhattisgarh,hazard,ranked,False,D.risk.CG.hazard,0.48428249105371,0.48
+CG,Chhattisgarh,burden,ranked,False,D.risk.CG.burden,0.509154892968626,0.51
+CG,Chhattisgarh,vuln,ranked,False,D.risk.CG.vuln,0.424607767499086,0.42
+DNH_DD,Dadra and Nagar Haveli and Daman and Diu,hazard,ranked,False,D.risk.DNH_DD.hazard,0.162109501518966,0.16
+DNH_DD,Dadra and Nagar Haveli and Daman and Diu,burden,ranked,False,D.risk.DNH_DD.burden,0.635398284568106,0.64
+DNH_DD,Dadra and Nagar Haveli and Daman and Diu,vuln,ranked,False,D.risk.DNH_DD.vuln,0.364418125847323,0.36
+DL,Delhi,hazard,ranked,False,D.risk.DL.hazard,0.767914427099047,0.77
+DL,Delhi,burden,ranked,False,D.risk.DL.burden,0.490810620635824,0.49
+DL,Delhi,vuln,ranked,False,D.risk.DL.vuln,0.304799783683306,0.30
+GA,Goa,hazard,ranked,True,D.risk.GA.hazard,0.124397508295617,0.12
+GA,Goa,burden,ranked,True,D.risk.GA.burden,0.386917934554522,0.39
+GA,Goa,vuln,ranked,True,D.risk.GA.vuln,0.12232631892828,0.12
+GJ,Gujarat,hazard,ranked,False,D.risk.GJ.hazard,0.277872149804051,0.28
+GJ,Gujarat,burden,ranked,False,D.risk.GJ.burden,0.559199220083049,0.56
+GJ,Gujarat,vuln,ranked,False,D.risk.GJ.vuln,0.39237697308601,0.39
+HR,Haryana,hazard,ranked,False,D.risk.HR.hazard,0.829570834612446,0.83
+HR,Haryana,burden,ranked,False,D.risk.HR.burden,0.490688210335968,0.49
+HR,Haryana,vuln,ranked,False,D.risk.HR.vuln,0.345778119851914,0.35
+HP,Himachal Pradesh,hazard,ranked,False,D.risk.HP.hazard,0.439213009290257,0.44
+HP,Himachal Pradesh,burden,ranked,False,D.risk.HP.burden,0.294419012624994,0.29
+HP,Himachal Pradesh,vuln,ranked,False,D.risk.HP.vuln,0.278552871578874,0.28
+JK,Jammu and Kashmir (incl. Ladakh),hazard,ranked,False,D.risk.JK.hazard,0.150374600739178,0.15
+JK,Jammu and Kashmir (incl. Ladakh),burden,ranked,False,D.risk.JK.burden,0.343468029075174,0.34
+JK,Jammu and Kashmir (incl. Ladakh),vuln,ranked,False,D.risk.JK.vuln,0.523265727482252,0.52
+JH,Jharkhand,hazard,ranked,False,D.risk.JH.hazard,0.593983609527685,0.59
+JH,Jharkhand,burden,ranked,False,D.risk.JH.burden,0.558602346891371,0.56
+JH,Jharkhand,vuln,ranked,False,D.risk.JH.vuln,0.746675981444469,0.75
+KA,Karnataka,hazard,ranked,False,D.risk.KA.hazard,0.26242645444868,0.26
+KA,Karnataka,burden,ranked,False,D.risk.KA.burden,0.406415467188241,0.41
+KA,Karnataka,vuln,ranked,False,D.risk.KA.vuln,0.421479614125472,0.42
+KL,Kerala,hazard,ranked,True,D.risk.KL.hazard,0.204646059489694,0.20
+KL,Kerala,burden,ranked,True,D.risk.KL.burden,0.154076491121641,0.15
+KL,Kerala,vuln,ranked,True,D.risk.KL.vuln,0.179026224189952,0.18
+LD,Lakshadweep,hazard,NA by rule (no rainfall hazard),True,D.risk.LD.hazard,,NA by rule
+LD,Lakshadweep,burden,NA by rule (no rainfall hazard),True,D.risk.LD.burden,0.312269070307622,0.31
+LD,Lakshadweep,vuln,NA by rule (no rainfall hazard),True,D.risk.LD.vuln,0.180137315863498,0.18
+MP,Madhya Pradesh,hazard,ranked,False,D.risk.MP.hazard,0.482594133420008,0.48
+MP,Madhya Pradesh,burden,ranked,False,D.risk.MP.burden,0.471054650017682,0.47
+MP,Madhya Pradesh,vuln,ranked,False,D.risk.MP.vuln,0.6593856423477,0.66
+MH,Maharashtra,hazard,ranked,False,D.risk.MH.hazard,0.410972608161286,0.41
+MH,Maharashtra,burden,ranked,False,D.risk.MH.burden,0.462614967523376,0.46
+MH,Maharashtra,vuln,ranked,False,D.risk.MH.vuln,0.426544633498155,0.43
+MN,Manipur,hazard,ranked,True,D.risk.MN.hazard,0.000414859373850049,0.00
+MN,Manipur,burden,ranked,True,D.risk.MN.burden,0.178404572515215,0.18
+MN,Manipur,vuln,ranked,True,D.risk.MN.vuln,0.660234586744873,0.66
+ML,Meghalaya,hazard,ranked,True,D.risk.ML.hazard,0.0887257201008489,0.09
+ML,Meghalaya,burden,ranked,True,D.risk.ML.burden,0.451112161271391,0.45
+ML,Meghalaya,vuln,ranked,True,D.risk.ML.vuln,0.538755552371755,0.54
+MZ,Mizoram,hazard,ranked,True,D.risk.MZ.hazard,0.178973986609799,0.18
+MZ,Mizoram,burden,ranked,True,D.risk.MZ.burden,0.502717443002203,0.50
+MZ,Mizoram,vuln,ranked,True,D.risk.MZ.vuln,0.24194921663646,0.24
+NL,Nagaland,hazard,ranked,True,D.risk.NL.hazard,0.136861776695496,0.14
+NL,Nagaland,burden,ranked,True,D.risk.NL.burden,0.284981227037702,0.28
+NL,Nagaland,vuln,ranked,True,D.risk.NL.vuln,0.548822681350091,0.55
+OD,Odisha,hazard,ranked,False,D.risk.OD.hazard,0.310836086718447,0.31
+OD,Odisha,burden,ranked,False,D.risk.OD.burden,0.61858716151372,0.62
+OD,Odisha,vuln,ranked,False,D.risk.OD.vuln,0.598099435452141,0.60
+PY,Puducherry,hazard,ranked,False,D.risk.PY.hazard,0.185524683986355,0.19
+PY,Puducherry,burden,ranked,False,D.risk.PY.burden,0.318395269135874,0.32
+PY,Puducherry,vuln,ranked,False,D.risk.PY.vuln,0.257326627229648,0.26
+PB,Punjab,hazard,ranked,False,D.risk.PB.hazard,0.700491498072179,0.70
+PB,Punjab,burden,ranked,False,D.risk.PB.burden,0.524354060069743,0.52
+PB,Punjab,vuln,ranked,False,D.risk.PB.vuln,0.342179131976688,0.34
+RJ,Rajasthan,hazard,ranked,False,D.risk.RJ.hazard,0.456896834538984,0.46
+RJ,Rajasthan,burden,ranked,False,D.risk.RJ.burden,0.46086183407641,0.46
+RJ,Rajasthan,vuln,ranked,False,D.risk.RJ.vuln,0.316351128855448,0.32
+SK,Sikkim,hazard,ranked,True,D.risk.SK.hazard,0.180601115957014,0.18
+SK,Sikkim,burden,ranked,True,D.risk.SK.burden,0.250964569037227,0.25
+SK,Sikkim,vuln,ranked,True,D.risk.SK.vuln,0.356413809286214,0.36
+TN,Tamil Nadu,hazard,ranked,False,D.risk.TN.hazard,0.405723835955053,0.41
+TN,Tamil Nadu,burden,ranked,False,D.risk.TN.burden,0.276229377867528,0.28
+TN,Tamil Nadu,vuln,ranked,False,D.risk.TN.vuln,0.198642802889941,0.20
+TR,Tripura,hazard,ranked,True,D.risk.TR.hazard,0.0965232711353939,0.10
+TR,Tripura,burden,ranked,True,D.risk.TR.burden,0.546350079523723,0.55
+TR,Tripura,vuln,ranked,True,D.risk.TR.vuln,0.594059114303623,0.59
+UP,Uttar Pradesh,hazard,ranked,False,D.risk.UP.hazard,0.838144143510529,0.84
+UP,Uttar Pradesh,burden,ranked,False,D.risk.UP.burden,0.452969227966984,0.45
+UP,Uttar Pradesh,vuln,ranked,False,D.risk.UP.vuln,0.575597756622509,0.58
+UK,Uttarakhand,hazard,ranked,False,D.risk.UK.hazard,0.505769249185301,0.51
+UK,Uttarakhand,burden,ranked,False,D.risk.UK.burden,0.266635956446756,0.27
+UK,Uttarakhand,vuln,ranked,False,D.risk.UK.vuln,0.273515947810644,0.27
+WB,West Bengal,hazard,ranked,False,D.risk.WB.hazard,0.375843828119001,0.38
+WB,West Bengal,burden,ranked,False,D.risk.WB.burden,0.518305162768032,0.52
+WB,West Bengal,vuln,ranked,False,D.risk.WB.vuln,0.536012847474134,0.54

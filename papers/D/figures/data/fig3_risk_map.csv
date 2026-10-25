@@ -1,0 +1,35 @@
+unit_id,unit_name,status,key,value,display
+AN,Andaman and Nicobar Islands,NA by rule (no rainfall hazard),D.risk.AN.index_equal,,not ranked (NA by rule)
+AP_TG,Andhra Pradesh and Telangana,ranked,D.risk.AP_TG.index_equal,0.464288806083051,0.46
+AR,Arunachal Pradesh,ranked,D.risk.AR.index_equal,0.416466439885796,0.42
+AS,Assam,ranked,D.risk.AS.index_equal,0.38745081755832,0.39
+BR,Bihar,ranked,D.risk.BR.index_equal,0.636675188780881,0.64
+CH,Chandigarh,ranked,D.risk.CH.index_equal,0.462030013348112,0.46
+CG,Chhattisgarh,ranked,D.risk.CG.index_equal,0.472681717173807,0.47
+DNH_DD,Dadra and Nagar Haveli and Daman and Diu,ranked,D.risk.DNH_DD.index_equal,0.387308637311465,0.39
+DL,Delhi,ranked,D.risk.DL.index_equal,0.521174943806059,0.52
+GA,Goa,ranked,D.risk.GA.index_equal,0.211213920592806,0.21
+GJ,Gujarat,ranked,D.risk.GJ.index_equal,0.40981611432437,0.41
+HR,Haryana,ranked,D.risk.HR.index_equal,0.555345721600109,0.56
+HP,Himachal Pradesh,ranked,D.risk.HP.index_equal,0.337394964498041,0.34
+JK,Jammu and Kashmir (incl. Ladakh),ranked,D.risk.JK.index_equal,0.339036119098868,0.34
+JH,Jharkhand,ranked,D.risk.JH.index_equal,0.633087312621175,0.63
+KA,Karnataka,ranked,D.risk.KA.index_equal,0.363440511920798,0.36
+KL,Kerala,ranked,D.risk.KL.index_equal,0.179249591600429,0.18
+LD,Lakshadweep,NA by rule (no rainfall hazard),D.risk.LD.index_equal,,not ranked (NA by rule)
+MP,Madhya Pradesh,ranked,D.risk.MP.index_equal,0.537678141928463,0.54
+MH,Maharashtra,ranked,D.risk.MH.index_equal,0.433377403060939,0.43
+MN,Manipur,ranked,D.risk.MN.index_equal,0.27968467287798,0.28
+ML,Meghalaya,ranked,D.risk.ML.index_equal,0.359531144581332,0.36
+MZ,Mizoram,ranked,D.risk.MZ.index_equal,0.307880215416154,0.31
+NL,Nagaland,ranked,D.risk.NL.index_equal,0.323555228361096,0.32
+OD,Odisha,ranked,D.risk.OD.index_equal,0.50917422789477,0.51
+PY,Puducherry,ranked,D.risk.PY.index_equal,0.253748860117292,0.25
+PB,Punjab,ranked,D.risk.PB.index_equal,0.52234156337287,0.52
+RJ,Rajasthan,ranked,D.risk.RJ.index_equal,0.41136993249028,0.41
+SK,Sikkim,ranked,D.risk.SK.index_equal,0.262659831426818,0.26
+TN,Tamil Nadu,ranked,D.risk.TN.index_equal,0.293532005570841,0.29
+TR,Tripura,ranked,D.risk.TR.index_equal,0.412310821654247,0.41
+UP,Uttar Pradesh,ranked,D.risk.UP.index_equal,0.622237042700007,0.62
+UK,Uttarakhand,ranked,D.risk.UK.index_equal,0.3486403844809,0.35
+WB,West Bengal,ranked,D.risk.WB.index_equal,0.476720612787056,0.48

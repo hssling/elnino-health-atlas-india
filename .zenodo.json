@@ -1,0 +1,33 @@
+{
+  "title": "El Niño Health Vulnerability Atlas of India: code, results contract and aggregate data",
+  "upload_type": "software",
+  "version": "1.0.0",
+  "description": "<p>Code, every reported number and the aggregate data of a pre-specified synthesis of El Niño and health in India (manuscript; citation to follow). The synthesis compares the traditional Oceanic Niño Index, the Relative ONI and the Niño-3.4 anomaly across malaria, dengue and recorded heat deaths under a fixed decision rule; hindcasts malaria and recorded heat deaths with ENSO forecasts issued before each season, with a climatological comparator that separates ENSO information from other model terms; builds a State El Niño Health Risk Index for 34 state-level units with Monte Carlo rank intervals; consolidates the companion analyses' 2026–27 outlook by unit; and reports a rapid systematic review (PRISMA 2020, PRISMA-S).</p><p>Contents: the R analysis and the Python synthesis pipeline; the results contract (committed before the new analyses; later changes as dated amendments); every reported number (results.json) with its traceability table; aggregate tables and figure data; the review protocol, screening, extraction and evidence-gap map; the digitised IRI forecast archive with the source figures; and the El Niño Health Vulnerability Atlas of India (docs/index.html, a self-contained web page). No record-level or cluster-level data are included.</p>",
+  "creators": [
+    {
+      "name": "Siddalingaiah, H S",
+      "affiliation": "Department of Community Medicine, Shridevi Institute of Medical Sciences and Research Hospital, Tumakuru, Karnataka, India",
+      "orcid": "0000-0002-4771-8285"
+    }
+  ],
+  "license": "mit",
+  "keywords": [
+    "El Niño–Southern Oscillation",
+    "Relative Oceanic Niño Index",
+    "early warning",
+    "forecast verification",
+    "composite risk index",
+    "malaria",
+    "heat mortality",
+    "systematic review",
+    "India",
+    "climate and health"
+  ],
+  "related_identifiers": [
+    {"identifier": "https://github.com/hssling/elnino-health-atlas-india", "relation": "isSupplementTo", "scheme": "url"},
+    {"identifier": "10.5281/zenodo.23424043", "relation": "references", "scheme": "doi"},
+    {"identifier": "10.5281/zenodo.23599461", "relation": "references", "scheme": "doi"},
+    {"identifier": "10.5281/zenodo.23556278", "relation": "references", "scheme": "doi"}
+  ],
+  "notes": "Code: MIT licence. Results, aggregate data, review files and atlas content: CC BY 4.0 (see DATA_LICENSE.md); GADM-derived boundaries and names remain under the GADM licence; IRI plume figures remain IRI's. NFHS microdata are not redistributed."
+}

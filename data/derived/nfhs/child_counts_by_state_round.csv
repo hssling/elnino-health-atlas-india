@@ -1,0 +1,505 @@
+round,state_code,state_name,n_children,indicator,n,prev_pct
+nfhs4,1,andaman and nicobar islands,644,lbw,624,16.26
+nfhs4,1,andaman and nicobar islands,644,stunting,578,23.27
+nfhs4,1,andaman and nicobar islands,644,underweight,578,21.11
+nfhs4,1,andaman and nicobar islands,644,wasting,578,18.98
+nfhs4,1,andaman and nicobar islands,644,anaemia_any,551,50.27
+nfhs4,1,andaman and nicobar islands,644,anaemia_modsev,551,23.4
+nfhs4,1,andaman and nicobar islands,644,diarrhoea,637,5.32
+nfhs4,2,andhra pradesh,3128,lbw,2997,17.61
+nfhs4,2,andhra pradesh,3128,stunting,2599,31.44
+nfhs4,2,andhra pradesh,3128,underweight,2599,32.19
+nfhs4,2,andhra pradesh,3128,wasting,2599,17.35
+nfhs4,2,andhra pradesh,3128,anaemia_any,2140,58.5
+nfhs4,2,andhra pradesh,3128,anaemia_modsev,2140,31.99
+nfhs4,2,andhra pradesh,3128,diarrhoea,3013,6.56
+nfhs4,3,arunachal pradesh,4966,lbw,2429,10.7
+nfhs4,3,arunachal pradesh,4966,stunting,3851,29.3
+nfhs4,3,arunachal pradesh,4966,underweight,3851,19.44
+nfhs4,3,arunachal pradesh,4966,wasting,3851,16.93
+nfhs4,3,arunachal pradesh,4966,anaemia_any,3667,54.38
+nfhs4,3,arunachal pradesh,4966,anaemia_modsev,3667,24.92
+nfhs4,3,arunachal pradesh,4966,diarrhoea,4772,6.58
+nfhs4,4,assam,10309,lbw,7757,15.8
+nfhs4,4,assam,10309,stunting,8855,36.25
+nfhs4,4,assam,10309,underweight,8855,29.77
+nfhs4,4,assam,10309,wasting,8855,16.98
+nfhs4,4,assam,10309,anaemia_any,7948,35.88
+nfhs4,4,assam,10309,anaemia_modsev,7948,11.9
+nfhs4,4,assam,10309,diarrhoea,9766,2.94
+nfhs4,5,bihar,25437,lbw,15576,14.41
+nfhs4,5,bihar,25437,stunting,22275,48.38
+nfhs4,5,bihar,25437,underweight,22275,43.93
+nfhs4,5,bihar,25437,wasting,22275,20.87
+nfhs4,5,bihar,25437,anaemia_any,20960,63.54
+nfhs4,5,bihar,25437,anaemia_modsev,20960,33.28
+nfhs4,5,bihar,25437,diarrhoea,24064,10.42
+nfhs4,6,chandigarh,194,lbw,184,22.19
+nfhs4,6,chandigarh,194,stunting,174,29.22
+nfhs4,6,chandigarh,194,underweight,174,24.46
+nfhs4,6,chandigarh,194,wasting,174,9.93
+nfhs4,6,chandigarh,194,anaemia_any,154,72.18
+nfhs4,6,chandigarh,194,anaemia_modsev,154,45.34
+nfhs4,6,chandigarh,194,diarrhoea,187,4.6
+nfhs4,7,chhattisgarh,9283,lbw,7776,12.64
+nfhs4,7,chhattisgarh,9283,stunting,8230,37.6
+nfhs4,7,chhattisgarh,9283,underweight,8230,37.69
+nfhs4,7,chhattisgarh,9283,wasting,8230,23.1
+nfhs4,7,chhattisgarh,9283,anaemia_any,7140,41.74
+nfhs4,7,chhattisgarh,9283,anaemia_modsev,7140,17.8
+nfhs4,7,chhattisgarh,9283,diarrhoea,8733,9.14
+nfhs4,8,dadra and nagar haveli,322,lbw,281,23.11
+nfhs4,8,dadra and nagar haveli,322,stunting,277,41.84
+nfhs4,8,dadra and nagar haveli,322,underweight,277,38.76
+nfhs4,8,dadra and nagar haveli,322,wasting,277,27.57
+nfhs4,8,dadra and nagar haveli,322,anaemia_any,262,84.35
+nfhs4,8,dadra and nagar haveli,322,anaemia_modsev,262,49.44
+nfhs4,8,dadra and nagar haveli,322,diarrhoea,311,4.21
+nfhs4,9,daman and diu,407,lbw,352,17.78
+nfhs4,9,daman and diu,407,stunting,329,23.12
+nfhs4,9,daman and diu,407,underweight,329,26.19
+nfhs4,9,daman and diu,407,wasting,329,24.34
+nfhs4,9,daman and diu,407,anaemia_any,283,74.46
+nfhs4,9,daman and diu,407,anaemia_modsev,283,38.44
+nfhs4,9,daman and diu,407,diarrhoea,395,3.81
+nfhs4,10,goa,416,lbw,406,22.35
+nfhs4,10,goa,416,stunting,378,20.0
+nfhs4,10,goa,416,underweight,378,23.66
+nfhs4,10,goa,416,wasting,378,21.83
+nfhs4,10,goa,416,anaemia_any,360,48.35
+nfhs4,10,goa,416,anaemia_modsev,360,18.62
+nfhs4,10,goa,416,diarrhoea,410,3.76
+nfhs4,11,gujarat,7730,lbw,6896,19.01
+nfhs4,11,gujarat,7730,stunting,6444,38.31
+nfhs4,11,gujarat,7730,underweight,6444,39.36
+nfhs4,11,gujarat,7730,wasting,6444,26.51
+nfhs4,11,gujarat,7730,anaemia_any,6030,62.4
+nfhs4,11,gujarat,7730,anaemia_modsev,6030,30.99
+nfhs4,11,gujarat,7730,diarrhoea,7399,8.4
+nfhs4,12,haryana,7882,lbw,6698,20.45
+nfhs4,12,haryana,7882,stunting,6875,34.0
+nfhs4,12,haryana,7882,underweight,6875,29.53
+nfhs4,12,haryana,7882,wasting,6875,21.23
+nfhs4,12,haryana,7882,anaemia_any,6535,71.84
+nfhs4,12,haryana,7882,anaemia_modsev,6535,43.78
+nfhs4,12,haryana,7882,diarrhoea,7568,7.69
+nfhs4,13,himachal pradesh,2929,lbw,2365,19.56
+nfhs4,13,himachal pradesh,2929,stunting,2525,26.4
+nfhs4,13,himachal pradesh,2929,underweight,2525,21.56
+nfhs4,13,himachal pradesh,2929,wasting,2525,13.9
+nfhs4,13,himachal pradesh,2929,anaemia_any,2280,53.7
+nfhs4,13,himachal pradesh,2929,anaemia_modsev,2280,30.73
+nfhs4,13,himachal pradesh,2929,diarrhoea,2808,6.66
+nfhs4,14,jammu and kashmir,8245,lbw,5541,13.96
+nfhs4,14,jammu and kashmir,8245,stunting,7093,27.7
+nfhs4,14,jammu and kashmir,8245,underweight,7093,16.77
+nfhs4,14,jammu and kashmir,8245,wasting,7093,12.23
+nfhs4,14,jammu and kashmir,8245,anaemia_any,6691,54.16
+nfhs4,14,jammu and kashmir,8245,anaemia_modsev,6691,31.82
+nfhs4,14,jammu and kashmir,8245,diarrhoea,7916,7.52
+nfhs4,15,jharkhand,12204,lbw,8454,14.54
+nfhs4,15,jharkhand,12204,stunting,10507,45.54
+nfhs4,15,jharkhand,12204,underweight,10507,47.85
+nfhs4,15,jharkhand,12204,wasting,10507,28.9
+nfhs4,15,jharkhand,12204,anaemia_any,9994,70.1
+nfhs4,15,jharkhand,12204,anaemia_modsev,9994,38.56
+nfhs4,15,jharkhand,12204,diarrhoea,11625,6.94
+nfhs4,16,karnataka,7789,lbw,7341,17.17
+nfhs4,16,karnataka,7789,stunting,6308,36.28
+nfhs4,16,karnataka,7789,underweight,6308,35.08
+nfhs4,16,karnataka,7789,wasting,6308,25.89
+nfhs4,16,karnataka,7789,anaemia_any,6153,61.25
+nfhs4,16,karnataka,7789,anaemia_modsev,6153,30.9
+nfhs4,16,karnataka,7789,diarrhoea,7533,4.48
+nfhs4,17,kerala,2462,lbw,2438,15.5
+nfhs4,17,kerala,2462,stunting,2235,19.99
+nfhs4,17,kerala,2462,underweight,2235,16.23
+nfhs4,17,kerala,2462,wasting,2235,15.68
+nfhs4,17,kerala,2462,anaemia_any,2060,35.95
+nfhs4,17,kerala,2462,anaemia_modsev,2060,13.08
+nfhs4,17,kerala,2462,diarrhoea,2443,3.35
+nfhs4,18,lakshadweep,308,lbw,300,18.35
+nfhs4,18,lakshadweep,308,stunting,281,26.55
+nfhs4,18,lakshadweep,308,underweight,281,23.53
+nfhs4,18,lakshadweep,308,wasting,281,14.07
+nfhs4,18,lakshadweep,308,anaemia_any,237,52.61
+nfhs4,18,lakshadweep,308,anaemia_modsev,237,24.97
+nfhs4,18,lakshadweep,308,diarrhoea,300,6.33
+nfhs4,19,madhya pradesh,24611,lbw,19648,21.88
+nfhs4,19,madhya pradesh,24611,stunting,21272,41.94
+nfhs4,19,madhya pradesh,24611,underweight,21272,42.83
+nfhs4,19,madhya pradesh,24611,wasting,21272,25.81
+nfhs4,19,madhya pradesh,24611,anaemia_any,20102,69.02
+nfhs4,19,madhya pradesh,24611,anaemia_modsev,20102,39.71
+nfhs4,19,madhya pradesh,24611,diarrhoea,23210,9.52
+nfhs4,20,maharashtra,9401,lbw,8931,19.54
+nfhs4,20,maharashtra,9401,stunting,7990,34.23
+nfhs4,20,maharashtra,9401,underweight,7990,35.91
+nfhs4,20,maharashtra,9401,wasting,7990,25.52
+nfhs4,20,maharashtra,9401,anaemia_any,7724,53.97
+nfhs4,20,maharashtra,9401,anaemia_modsev,7724,26.15
+nfhs4,20,maharashtra,9401,diarrhoea,9146,8.54
+nfhs4,21,manipur,5636,lbw,3790,9.14
+nfhs4,21,manipur,5636,stunting,5256,28.78
+nfhs4,21,manipur,5636,underweight,5256,13.69
+nfhs4,21,manipur,5636,wasting,5256,6.93
+nfhs4,21,manipur,5636,anaemia_any,4771,23.96
+nfhs4,21,manipur,5636,anaemia_modsev,4771,7.46
+nfhs4,21,manipur,5636,diarrhoea,5477,5.79
+nfhs4,22,meghalaya,4409,lbw,2861,12.19
+nfhs4,22,meghalaya,4409,stunting,3823,43.94
+nfhs4,22,meghalaya,4409,underweight,3823,28.88
+nfhs4,22,meghalaya,4409,wasting,3823,15.04
+nfhs4,22,meghalaya,4409,anaemia_any,3500,48.14
+nfhs4,22,meghalaya,4409,anaemia_modsev,3500,17.96
+nfhs4,22,meghalaya,4409,diarrhoea,4244,10.59
+nfhs4,23,mizoram,4905,lbw,4334,5.98
+nfhs4,23,mizoram,4905,stunting,4309,27.86
+nfhs4,23,mizoram,4905,underweight,4309,11.91
+nfhs4,23,mizoram,4905,wasting,4309,5.96
+nfhs4,23,mizoram,4905,anaemia_any,4087,19.63
+nfhs4,23,mizoram,4905,anaemia_modsev,4087,6.65
+nfhs4,23,mizoram,4905,diarrhoea,4662,7.59
+nfhs4,24,nagaland,4607,lbw,1665,7.82
+nfhs4,24,nagaland,4607,stunting,3825,28.51
+nfhs4,24,nagaland,4607,underweight,3825,16.81
+nfhs4,24,nagaland,4607,wasting,3825,11.33
+nfhs4,24,nagaland,4607,anaemia_any,3469,26.59
+nfhs4,24,nagaland,4607,anaemia_modsev,3469,11.39
+nfhs4,24,nagaland,4607,diarrhoea,4410,5.1
+nfhs4,25,delhi,1580,lbw,1342,26.55
+nfhs4,25,delhi,1580,stunting,1145,32.11
+nfhs4,25,delhi,1580,underweight,1145,27.3
+nfhs4,25,delhi,1580,wasting,1145,15.48
+nfhs4,25,delhi,1580,anaemia_any,1023,59.86
+nfhs4,25,delhi,1580,anaemia_modsev,1023,40.35
+nfhs4,25,delhi,1580,diarrhoea,1514,9.72
+nfhs4,26,odisha,11106,lbw,10211,20.77
+nfhs4,26,odisha,11106,stunting,9728,34.08
+nfhs4,26,odisha,11106,underweight,9728,34.3
+nfhs4,26,odisha,11106,wasting,9728,20.39
+nfhs4,26,odisha,11106,anaemia_any,9036,44.61
+nfhs4,26,odisha,11106,anaemia_modsev,9036,19.84
+nfhs4,26,odisha,11106,diarrhoea,10575,9.82
+nfhs4,27,puducherry,1081,lbw,1074,15.93
+nfhs4,27,puducherry,1081,stunting,945,23.79
+nfhs4,27,puducherry,1081,underweight,945,22.09
+nfhs4,27,puducherry,1081,wasting,945,23.77
+nfhs4,27,puducherry,1081,anaemia_any,931,44.9
+nfhs4,27,puducherry,1081,anaemia_modsev,931,15.95
+nfhs4,27,puducherry,1081,diarrhoea,1061,11.32
+nfhs4,28,punjab,5216,lbw,4970,17.19
+nfhs4,28,punjab,5216,stunting,4746,25.75
+nfhs4,28,punjab,5216,underweight,4746,21.65
+nfhs4,28,punjab,5216,wasting,4746,15.69
+nfhs4,28,punjab,5216,anaemia_any,4437,56.69
+nfhs4,28,punjab,5216,anaemia_modsev,4437,29.42
+nfhs4,28,punjab,5216,diarrhoea,5037,6.58
+nfhs4,29,rajasthan,16832,lbw,13276,21.38
+nfhs4,29,rajasthan,16832,stunting,14916,39.08
+nfhs4,29,rajasthan,16832,underweight,14916,36.57
+nfhs4,29,rajasthan,16832,wasting,14916,22.97
+nfhs4,29,rajasthan,16832,anaemia_any,13864,60.44
+nfhs4,29,rajasthan,16832,anaemia_modsev,13864,33.23
+nfhs4,29,rajasthan,16832,diarrhoea,16065,7.36
+nfhs4,30,sikkim,1005,lbw,987,8.44
+nfhs4,30,sikkim,1005,stunting,898,29.42
+nfhs4,30,sikkim,1005,underweight,898,14.06
+nfhs4,30,sikkim,1005,wasting,898,14.26
+nfhs4,30,sikkim,1005,anaemia_any,808,55.54
+nfhs4,30,sikkim,1005,anaemia_modsev,808,22.76
+nfhs4,30,sikkim,1005,diarrhoea,975,1.83
+nfhs4,31,tamil nadu,7922,lbw,7818,16.45
+nfhs4,31,tamil nadu,7922,stunting,6836,27.16
+nfhs4,31,tamil nadu,7922,underweight,6836,23.82
+nfhs4,31,tamil nadu,7922,wasting,6836,19.66
+nfhs4,31,tamil nadu,7922,anaemia_any,6715,50.77
+nfhs4,31,tamil nadu,7922,anaemia_modsev,6715,23.28
+nfhs4,31,tamil nadu,7922,diarrhoea,7716,7.97
+nfhs4,32,tripura,1330,lbw,1066,17.52
+nfhs4,32,tripura,1330,stunting,1188,23.98
+nfhs4,32,tripura,1330,underweight,1188,23.98
+nfhs4,32,tripura,1330,wasting,1188,16.72
+nfhs4,32,tripura,1330,anaemia_any,1062,48.23
+nfhs4,32,tripura,1330,anaemia_modsev,1062,17.84
+nfhs4,32,tripura,1330,diarrhoea,1291,4.87
+nfhs4,33,uttar pradesh,41751,lbw,22263,20.72
+nfhs4,33,uttar pradesh,41751,stunting,36465,46.27
+nfhs4,33,uttar pradesh,41751,underweight,36465,39.49
+nfhs4,33,uttar pradesh,41751,wasting,36465,17.93
+nfhs4,33,uttar pradesh,41751,anaemia_any,33631,63.35
+nfhs4,33,uttar pradesh,41751,anaemia_modsev,33631,36.89
+nfhs4,33,uttar pradesh,41751,diarrhoea,38852,14.98
+nfhs4,34,uttarakhand,5825,lbw,3643,24.77
+nfhs4,34,uttarakhand,5825,stunting,5007,33.87
+nfhs4,34,uttarakhand,5825,underweight,5007,26.82
+nfhs4,34,uttarakhand,5825,wasting,5007,19.5
+nfhs4,34,uttarakhand,5825,anaemia_any,4755,60.21
+nfhs4,34,uttarakhand,5825,anaemia_modsev,4755,32.7
+nfhs4,34,uttarakhand,5825,diarrhoea,5561,17.05
+nfhs4,35,west bengal,5328,lbw,4587,16.68
+nfhs4,35,west bengal,5328,stunting,4810,32.72
+nfhs4,35,west bengal,5328,underweight,4810,31.56
+nfhs4,35,west bengal,5328,wasting,4810,20.18
+nfhs4,35,west bengal,5328,anaemia_any,4375,54.47
+nfhs4,35,west bengal,5328,anaemia_modsev,4375,23.39
+nfhs4,35,west bengal,5328,diarrhoea,5160,5.87
+nfhs4,36,telangana,2427,lbw,2335,15.88
+nfhs4,36,telangana,2427,stunting,2029,27.61
+nfhs4,36,telangana,2427,underweight,2029,27.9
+nfhs4,36,telangana,2427,wasting,2029,17.89
+nfhs4,36,telangana,2427,anaemia_any,1760,60.63
+nfhs4,36,telangana,2427,anaemia_modsev,1760,36.05
+nfhs4,36,telangana,2427,diarrhoea,2345,8.2
+nfhs5,1,jammu & kashmir,5857,lbw,5216,10.73
+nfhs5,1,jammu & kashmir,5857,stunting,5335,26.89
+nfhs5,1,jammu & kashmir,5857,underweight,5535,21.0
+nfhs5,1,jammu & kashmir,5857,wasting,5120,18.99
+nfhs5,1,jammu & kashmir,5857,anaemia_any,4952,72.72
+nfhs5,1,jammu & kashmir,5857,anaemia_modsev,4952,49.59
+nfhs5,1,jammu & kashmir,5857,diarrhoea,5724,5.58
+nfhs5,2,himachal pradesh,2635,lbw,2482,15.71
+nfhs5,2,himachal pradesh,2635,stunting,2399,30.85
+nfhs5,2,himachal pradesh,2635,underweight,2441,25.51
+nfhs5,2,himachal pradesh,2635,wasting,2350,17.4
+nfhs5,2,himachal pradesh,2635,anaemia_any,2199,55.04
+nfhs5,2,himachal pradesh,2635,anaemia_modsev,2199,28.98
+nfhs5,2,himachal pradesh,2635,diarrhoea,2544,4.74
+nfhs5,3,punjab,5616,lbw,5255,22.32
+nfhs5,3,punjab,5616,stunting,4887,24.46
+nfhs5,3,punjab,5616,underweight,4962,16.87
+nfhs5,3,punjab,5616,wasting,4867,10.47
+nfhs5,3,punjab,5616,anaemia_any,4262,71.5
+nfhs5,3,punjab,5616,anaemia_modsev,4262,45.98
+nfhs5,3,punjab,5616,diarrhoea,5332,4.97
+nfhs5,4,chandigarh,174,lbw,166,16.93
+nfhs5,4,chandigarh,174,stunting,156,25.11
+nfhs5,4,chandigarh,174,underweight,156,21.06
+nfhs5,4,chandigarh,174,wasting,155,9.03
+nfhs5,4,chandigarh,174,anaemia_any,128,53.71
+nfhs5,4,chandigarh,174,anaemia_modsev,128,28.06
+nfhs5,4,chandigarh,174,diarrhoea,167,4.41
+nfhs5,5,uttarakhand,3784,lbw,3242,17.81
+nfhs5,5,uttarakhand,3784,stunting,3338,27.0
+nfhs5,5,uttarakhand,3784,underweight,3380,21.04
+nfhs5,5,uttarakhand,3784,wasting,3304,13.23
+nfhs5,5,uttarakhand,3784,anaemia_any,2895,59.07
+nfhs5,5,uttarakhand,3784,anaemia_modsev,2895,34.57
+nfhs5,5,uttarakhand,3784,diarrhoea,3611,4.45
+nfhs5,6,haryana,6915,lbw,6456,20.51
+nfhs5,6,haryana,6915,stunting,6024,27.48
+nfhs5,6,haryana,6915,underweight,6120,21.54
+nfhs5,6,haryana,6915,wasting,5971,11.57
+nfhs5,6,haryana,6915,anaemia_any,5249,70.82
+nfhs5,6,haryana,6915,anaemia_modsev,5249,44.52
+nfhs5,6,haryana,6915,diarrhoea,6589,4.98
+nfhs5,7,nct of delhi,2937,lbw,2725,22.05
+nfhs5,7,nct of delhi,2937,stunting,2475,30.89
+nfhs5,7,nct of delhi,2937,underweight,2525,21.71
+nfhs5,7,nct of delhi,2937,wasting,2424,11.12
+nfhs5,7,nct of delhi,2937,anaemia_any,2147,69.62
+nfhs5,7,nct of delhi,2937,anaemia_modsev,2147,43.02
+nfhs5,7,nct of delhi,2937,diarrhoea,2822,10.64
+nfhs5,8,rajasthan,14643,lbw,13655,17.73
+nfhs5,8,rajasthan,14643,stunting,13149,31.76
+nfhs5,8,rajasthan,14643,underweight,13411,27.56
+nfhs5,8,rajasthan,14643,wasting,12891,16.78
+nfhs5,8,rajasthan,14643,anaemia_any,11567,71.49
+nfhs5,8,rajasthan,14643,anaemia_modsev,11567,40.51
+nfhs5,8,rajasthan,14643,diarrhoea,14023,6.11
+nfhs5,9,uttar pradesh,35766,lbw,30124,20.17
+nfhs5,9,uttar pradesh,35766,stunting,30828,39.58
+nfhs5,9,uttar pradesh,35766,underweight,31492,32.07
+nfhs5,9,uttar pradesh,35766,wasting,30133,17.26
+nfhs5,9,uttar pradesh,35766,anaemia_any,26549,66.97
+nfhs5,9,uttar pradesh,35766,anaemia_modsev,26549,38.57
+nfhs5,9,uttar pradesh,35766,diarrhoea,33518,5.59
+nfhs5,10,bihar,21040,lbw,16062,16.78
+nfhs5,10,bihar,21040,stunting,18293,42.95
+nfhs5,10,bihar,21040,underweight,18692,40.99
+nfhs5,10,bihar,21040,wasting,18025,22.86
+nfhs5,10,bihar,21040,anaemia_any,16649,70.41
+nfhs5,10,bihar,21040,anaemia_modsev,16649,39.78
+nfhs5,10,bihar,21040,diarrhoea,19704,13.83
+nfhs5,11,sikkim,620,lbw,602,9.85
+nfhs5,11,sikkim,620,stunting,530,22.33
+nfhs5,11,sikkim,620,underweight,543,13.09
+nfhs5,11,sikkim,620,wasting,500,13.62
+nfhs5,11,sikkim,620,anaemia_any,474,55.27
+nfhs5,11,sikkim,620,anaemia_modsev,474,29.95
+nfhs5,11,sikkim,620,diarrhoea,599,5.63
+nfhs5,12,arunachal pradesh,5524,lbw,4478,10.69
+nfhs5,12,arunachal pradesh,5524,stunting,5081,27.99
+nfhs5,12,arunachal pradesh,5524,underweight,5203,15.41
+nfhs5,12,arunachal pradesh,5524,wasting,4938,13.07
+nfhs5,12,arunachal pradesh,5524,anaemia_any,4645,56.2
+nfhs5,12,arunachal pradesh,5524,anaemia_modsev,4645,27.72
+nfhs5,12,arunachal pradesh,5524,diarrhoea,5376,5.15
+nfhs5,13,nagaland,3052,lbw,1504,4.69
+nfhs5,13,nagaland,3052,stunting,2838,32.77
+nfhs5,13,nagaland,3052,underweight,2871,26.83
+nfhs5,13,nagaland,3052,wasting,2780,19.07
+nfhs5,13,nagaland,3052,anaemia_any,2605,42.85
+nfhs5,13,nagaland,3052,anaemia_modsev,2605,15.86
+nfhs5,13,nagaland,3052,diarrhoea,2907,3.47
+nfhs5,14,manipur,3225,lbw,2400,7.28
+nfhs5,14,manipur,3225,stunting,2987,23.37
+nfhs5,14,manipur,3225,underweight,3026,13.24
+nfhs5,14,manipur,3225,wasting,2974,9.94
+nfhs5,14,manipur,3225,anaemia_any,2760,42.97
+nfhs5,14,manipur,3225,anaemia_modsev,2760,17.67
+nfhs5,14,manipur,3225,diarrhoea,3102,5.6
+nfhs5,15,mizoram,2454,lbw,2195,3.97
+nfhs5,15,mizoram,2454,stunting,2259,28.76
+nfhs5,15,mizoram,2454,underweight,2319,12.44
+nfhs5,15,mizoram,2454,wasting,2239,9.76
+nfhs5,15,mizoram,2454,anaemia_any,2050,48.34
+nfhs5,15,mizoram,2454,anaemia_modsev,2050,23.29
+nfhs5,15,mizoram,2454,diarrhoea,2384,4.3
+nfhs5,16,tripura,2074,lbw,1828,19.78
+nfhs5,16,tripura,2074,stunting,1906,32.24
+nfhs5,16,tripura,2074,underweight,1943,25.68
+nfhs5,16,tripura,2074,wasting,1837,18.07
+nfhs5,16,tripura,2074,anaemia_any,1753,64.41
+nfhs5,16,tripura,2074,anaemia_modsev,1753,30.65
+nfhs5,16,tripura,2074,diarrhoea,1967,6.24
+nfhs5,17,meghalaya,6628,lbw,5434,11.78
+nfhs5,17,meghalaya,6628,stunting,6133,46.56
+nfhs5,17,meghalaya,6628,underweight,6234,26.63
+nfhs5,17,meghalaya,6628,wasting,6070,12.08
+nfhs5,17,meghalaya,6628,anaemia_any,5518,44.28
+nfhs5,17,meghalaya,6628,anaemia_modsev,5518,19.99
+nfhs5,17,meghalaya,6628,diarrhoea,6321,10.47
+nfhs5,18,assam,10645,lbw,9801,16.16
+nfhs5,18,assam,10645,stunting,9661,35.3
+nfhs5,18,assam,10645,underweight,9977,32.8
+nfhs5,18,assam,10645,wasting,9374,21.7
+nfhs5,18,assam,10645,anaemia_any,8758,70.29
+nfhs5,18,assam,10645,anaemia_modsev,8758,33.97
+nfhs5,18,assam,10645,diarrhoea,10209,5.49
+nfhs5,19,west bengal,5618,lbw,5353,19.04
+nfhs5,19,west bengal,5618,stunting,5152,33.87
+nfhs5,19,west bengal,5618,underweight,5281,32.34
+nfhs5,19,west bengal,5618,wasting,5072,20.43
+nfhs5,19,west bengal,5618,anaemia_any,4682,69.06
+nfhs5,19,west bengal,5618,anaemia_modsev,4682,34.18
+nfhs5,19,west bengal,5618,diarrhoea,5425,6.54
+nfhs5,20,jharkhand,10047,lbw,8526,15.63
+nfhs5,20,jharkhand,10047,stunting,8897,39.64
+nfhs5,20,jharkhand,10047,underweight,9055,39.42
+nfhs5,20,jharkhand,10047,wasting,8704,22.37
+nfhs5,20,jharkhand,10047,anaemia_any,7829,69.28
+nfhs5,20,jharkhand,10047,anaemia_modsev,7829,37.51
+nfhs5,20,jharkhand,10047,diarrhoea,9555,7.26
+nfhs5,21,odisha,8522,lbw,8265,19.14
+nfhs5,21,odisha,8522,stunting,7798,30.96
+nfhs5,21,odisha,8522,underweight,7891,29.59
+nfhs5,21,odisha,8522,wasting,7647,18.03
+nfhs5,21,odisha,8522,anaemia_any,6936,65.3
+nfhs5,21,odisha,8522,anaemia_modsev,6936,33.43
+nfhs5,21,odisha,8522,diarrhoea,8090,9.73
+nfhs5,22,chhattisgarh,8514,lbw,8026,15.96
+nfhs5,22,chhattisgarh,8514,stunting,7471,34.57
+nfhs5,22,chhattisgarh,8514,underweight,7663,31.34
+nfhs5,22,chhattisgarh,8514,wasting,7337,18.93
+nfhs5,22,chhattisgarh,8514,anaemia_any,6781,68.1
+nfhs5,22,chhattisgarh,8514,anaemia_modsev,6781,40.0
+nfhs5,22,chhattisgarh,8514,diarrhoea,8037,3.65
+nfhs5,23,madhya pradesh,16280,lbw,15030,20.6
+nfhs5,23,madhya pradesh,16280,stunting,13957,35.58
+nfhs5,23,madhya pradesh,16280,underweight,14228,32.91
+nfhs5,23,madhya pradesh,16280,wasting,13766,18.89
+nfhs5,23,madhya pradesh,16280,anaemia_any,12182,73.49
+nfhs5,23,madhya pradesh,16280,anaemia_modsev,12182,45.75
+nfhs5,23,madhya pradesh,16280,diarrhoea,15394,6.45
+nfhs5,24,gujarat,9868,lbw,9434,18.54
+nfhs5,24,gujarat,9868,stunting,8878,39.04
+nfhs5,24,gujarat,9868,underweight,9069,39.7
+nfhs5,24,gujarat,9868,wasting,8566,25.04
+nfhs5,24,gujarat,9868,anaemia_any,8058,80.13
+nfhs5,24,gujarat,9868,anaemia_modsev,8058,52.63
+nfhs5,24,gujarat,9868,diarrhoea,9443,8.26
+nfhs5,25,dadra & nagar haveli and daman & diu,795,lbw,749,20.68
+nfhs5,25,dadra & nagar haveli and daman & diu,795,stunting,710,39.37
+nfhs5,25,dadra & nagar haveli and daman & diu,795,underweight,738,38.65
+nfhs5,25,dadra & nagar haveli and daman & diu,795,wasting,704,21.61
+nfhs5,25,dadra & nagar haveli and daman & diu,795,anaemia_any,666,77.09
+nfhs5,25,dadra & nagar haveli and daman & diu,795,anaemia_modsev,666,44.91
+nfhs5,25,dadra & nagar haveli and daman & diu,795,diarrhoea,765,2.68
+nfhs5,27,maharashtra,9520,lbw,9044,20.11
+nfhs5,27,maharashtra,9520,stunting,8393,35.44
+nfhs5,27,maharashtra,9520,underweight,8624,36.04
+nfhs5,27,maharashtra,9520,wasting,8138,25.47
+nfhs5,27,maharashtra,9520,anaemia_any,7751,69.86
+nfhs5,27,maharashtra,9520,anaemia_modsev,7751,40.57
+nfhs5,27,maharashtra,9520,diarrhoea,9160,8.96
+nfhs5,28,andhra pradesh,2833,lbw,2749,16.25
+nfhs5,28,andhra pradesh,2833,stunting,2471,31.09
+nfhs5,28,andhra pradesh,2833,underweight,2507,29.58
+nfhs5,28,andhra pradesh,2833,wasting,2442,16.05
+nfhs5,28,andhra pradesh,2833,anaemia_any,2166,64.26
+nfhs5,28,andhra pradesh,2833,anaemia_modsev,2166,37.65
+nfhs5,28,andhra pradesh,2833,diarrhoea,2708,7.27
+nfhs5,29,karnataka,8383,lbw,8063,15.92
+nfhs5,29,karnataka,8383,stunting,7214,35.4
+nfhs5,29,karnataka,8383,underweight,7424,32.88
+nfhs5,29,karnataka,8383,wasting,6992,19.5
+nfhs5,29,karnataka,8383,anaemia_any,6635,66.41
+nfhs5,29,karnataka,8383,anaemia_modsev,6635,39.0
+nfhs5,29,karnataka,8383,diarrhoea,8058,5.27
+nfhs5,30,goa,369,lbw,360,13.17
+nfhs5,30,goa,369,stunting,340,25.75
+nfhs5,30,goa,369,underweight,344,24.02
+nfhs5,30,goa,369,wasting,336,19.09
+nfhs5,30,goa,369,anaemia_any,275,53.49
+nfhs5,30,goa,369,anaemia_modsev,275,27.54
+nfhs5,30,goa,369,diarrhoea,360,3.29
+nfhs5,31,lakshadweep,276,lbw,272,9.82
+nfhs5,31,lakshadweep,276,stunting,251,32.05
+nfhs5,31,lakshadweep,276,underweight,254,25.71
+nfhs5,31,lakshadweep,276,wasting,233,17.29
+nfhs5,31,lakshadweep,276,anaemia_any,220,43.04
+nfhs5,31,lakshadweep,276,anaemia_modsev,220,11.32
+nfhs5,31,lakshadweep,276,diarrhoea,273,2.29
+nfhs5,32,kerala,2734,lbw,2678,16.44
+nfhs5,32,kerala,2734,stunting,2520,23.36
+nfhs5,32,kerala,2734,underweight,2565,19.61
+nfhs5,32,kerala,2734,wasting,2470,15.73
+nfhs5,32,kerala,2734,anaemia_any,2240,39.34
+nfhs5,32,kerala,2734,anaemia_modsev,2240,15.33
+nfhs5,32,kerala,2734,diarrhoea,2676,4.28
+nfhs5,33,tamil nadu,6498,lbw,6409,17.05
+nfhs5,33,tamil nadu,6498,stunting,5890,25.06
+nfhs5,33,tamil nadu,6498,underweight,6009,21.99
+nfhs5,33,tamil nadu,6498,wasting,5776,14.62
+nfhs5,33,tamil nadu,6498,anaemia_any,5347,57.59
+nfhs5,33,tamil nadu,6498,anaemia_modsev,5347,30.47
+nfhs5,33,tamil nadu,6498,diarrhoea,6329,3.72
+nfhs5,34,puducherry,766,lbw,750,13.05
+nfhs5,34,puducherry,766,stunting,712,20.1
+nfhs5,34,puducherry,766,underweight,722,14.98
+nfhs5,34,puducherry,766,wasting,700,12.06
+nfhs5,34,puducherry,766,anaemia_any,640,63.98
+nfhs5,34,puducherry,766,anaemia_modsev,640,40.67
+nfhs5,34,puducherry,766,diarrhoea,746,3.73
+nfhs5,35,andaman & nicobar islands,461,lbw,448,17.48
+nfhs5,35,andaman & nicobar islands,461,stunting,413,22.52
+nfhs5,35,andaman & nicobar islands,461,underweight,425,23.62
+nfhs5,35,andaman & nicobar islands,461,wasting,397,15.98
+nfhs5,35,andaman & nicobar islands,461,anaemia_any,384,40.12
+nfhs5,35,andaman & nicobar islands,461,anaemia_modsev,384,13.08
+nfhs5,35,andaman & nicobar islands,461,diarrhoea,440,5.72
+nfhs5,36,telangana,7318,lbw,7113,13.93
+nfhs5,36,telangana,7318,stunting,6197,33.04
+nfhs5,36,telangana,7318,underweight,6390,31.54
+nfhs5,36,telangana,7318,wasting,5988,21.7
+nfhs5,36,telangana,7318,anaemia_any,5469,70.18
+nfhs5,36,telangana,7318,anaemia_modsev,5469,45.2
+nfhs5,36,telangana,7318,diarrhoea,7044,7.43
+nfhs5,37,ladakh,529,lbw,485,11.54
+nfhs5,37,ladakh,529,stunting,482,30.66
+nfhs5,37,ladakh,529,underweight,505,20.53
+nfhs5,37,ladakh,529,wasting,467,17.66
+nfhs5,37,ladakh,529,anaemia_any,434,94.35
+nfhs5,37,ladakh,529,anaemia_modsev,434,87.4
+nfhs5,37,ladakh,529,diarrhoea,511,8.2

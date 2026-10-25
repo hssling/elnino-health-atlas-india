@@ -1,0 +1,34 @@
+# Controlled data and user-supplied inputs (never commit)
+data/external/
+data/MANIFEST.csv
+*.parquet
+*.zip
+*.dta
+*.DTA
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+# R
+.Rhistory
+.RData
+.Rproj.user/
+models/renv/library/
+models/renv/local/
+models/renv/staging/
+models/D/_cache/
+models/D/logs/
+models/A/_cache/
+models/C/_cache/
+# Figure images and built documents
+papers/D/figures/*.png
+papers/D/figures/*.tif
+papers/D/brief/*.docx
+# OS / editors
+.DS_Store
+Thumbs.db
+~$*
+.vscode/
+.idea/

@@ -1,0 +1,11 @@
+item,value,note
+pca_loading.hazard,0.370440812961352,"PC1 loading of the correlation matrix of (hazard, burden, vuln) over ranked units, oriented so the loadings sum positive"
+pca_loading.burden,0.71766925825137,"PC1 loading of the correlation matrix of (hazard, burden, vuln) over ranked units, oriented so the loadings sum positive"
+pca_loading.vuln,0.589681642798435,"PC1 loading of the correlation matrix of (hazard, burden, vuln) over ranked units, oriented so the loadings sum positive"
+pca_weight.hazard,0.220790703558623,absolute PC1 loading / sum of absolute PC1 loadings
+pca_weight.burden,0.427746336007115,absolute PC1 loading / sum of absolute PC1 loadings
+pca_weight.vuln,0.351462960434261,absolute PC1 loading / sum of absolute PC1 loadings
+pca_var_explained,0.457297049215706,share of variance of the first principal component
+kendall_tau_b.equal_geom,0.883064516129032,Kendall tau-b between point indices across ranked units
+kendall_tau_b.equal_pca,0.883064516129032,Kendall tau-b between point indices across ranked units
+kendall_tau_b.geom_pca,0.798387096774194,Kendall tau-b between point indices across ranked units

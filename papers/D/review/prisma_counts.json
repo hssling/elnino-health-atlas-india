@@ -1,0 +1,74 @@
+{
+ "search_date": "2026-10-24",
+ "n_records": 187,
+ "n_records_by_db": {
+  "pubmed": 78,
+  "europepmc": 99,
+  "crossref": 10
+ },
+ "crossref_display": "10",
+ "n_duplicates": 85,
+ "n_screened": 102,
+ "n_excluded_ta": 82,
+ "n_fulltext_sought": 20,
+ "n_fulltext_not_retrieved": 6,
+ "n_fulltext_assessed": 14,
+ "n_excluded_ft": 4,
+ "n_included": 8,
+ "n_reports_included": 10,
+ "n_linked_reports": 2,
+ "n_author_verified": 14,
+ "n_author_verify_denominator": 14,
+ "excluded_ta_by_reason": {
+  "not_india": 55,
+  "no_enso_exposure": 1,
+  "no_health_outcome": 14,
+  "not_primary_empirical": 12,
+  "ineligible_publication": 0,
+  "duplicate_report": 0
+ },
+ "excluded_ft_by_reason": {
+  "not_india": 2,
+  "no_enso_exposure": 0,
+  "no_health_outcome": 2,
+  "not_primary_empirical": 0,
+  "ineligible_publication": 0,
+  "duplicate_report": 0
+ },
+ "gap": {
+  "outcome": {
+   "malaria": 2,
+   "dengue": 4,
+   "other_vector_borne": 0,
+   "water_food_borne": 2,
+   "respiratory_other_infectious": 0,
+   "heat_related": 0,
+   "nutrition_child": 0,
+   "mental_health_suicide": 0,
+   "all_cause_mortality": 0,
+   "other": 0
+  },
+  "region": {
+   "all_india": 1,
+   "north": 3,
+   "central": 2,
+   "east": 5,
+   "northeast": 3,
+   "west": 3,
+   "south": 4,
+   "multi_country": 0
+  },
+  "design": {
+   "time_series": 2,
+   "spatiotemporal": 0,
+   "individual_level": 0,
+   "descriptive_comparison": 4,
+   "forecast_model": 2
+  },
+  "n_cells_filled": 16,
+  "n_cells": 80,
+  "caveat": "Counts are India-specific primary studies identified by this rapid review (PubMed, Europe PMC and Crossref; title/abstract search; open full texts only). A zero means no India-specific study was identified by this rapid review, not that none exists: the search cannot see global or multi-country studies whose India result appears only in the full text, paywalled reports that were not retrieved, or Scopus, Web of Science and Embase content."
+ },
+ "prisma_note": "PRISMA 2020: n_included counts studies; n_reports_included counts their reports (n_linked_reports further reports, e.g. preprints, are linked to an included study, not counted as full-text exclusions).",
+ "n_author_own": 0
+}

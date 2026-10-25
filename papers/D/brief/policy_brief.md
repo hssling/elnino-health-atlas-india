@@ -1,0 +1,35 @@
+---
+title: "El Niño 2026–27 and health in India: what to watch, when and where"
+subtitle: "Policy brief for state health departments and disaster management authorities (draft)"
+---
+
+<!-- Every number below is a results.json display (or part of one), bound to its key by the comment that follows it:
+     <!-k:KEY-> means the number span equals the key's display; <!-k:KEY:sub-> means it is a substring of the display.
+     tests/papers/test_d_atlas.py checks every binding and fails on any unbound number. -->
+
+**In short.** In the companion analyses, El Niño years were associated with more malaria and dengue cases and, in the hot season that follows, with more recorded heat deaths (for heat deaths, clearly so only on the traditional ONI). This brief turns a synthesis of three companion analyses (manuscripts under review) into practical pointers. All figures are estimates with wide uncertainty; use them to plan, not to predict exact numbers.
+
+## What to watch
+
+- **Malaria in 2026 and 2027.** At the provisional June–September 2026 traditional ONI of +1.78<!--k:D.outlook.enso.oni_jjas2026--> °C, the expected excess for India in 2026 is 71,517 (nominal 95% interval 8,417–159,102)<!--k:D.outlook.india.malaria.oni2026.mean--> malaria cases. This is an **extrapolation**: an El Niño this strong on the traditional ONI lies beyond those seen in the malaria data. With CPC's official index, RONI (+1.34<!--k:D.outlook.enso.roni_jjas2026--> °C), which lies within the range seen, it is 53,700 (nominal 95% interval 3,659–125,507)<!--k:D.outlook.india.malaria.roni2026.mean-->. A smaller and less certain carry-over is expected in 2027 (its interval includes zero): 35,013 (nominal 95% interval −18,511 to 98,212)<!--k:D.outlook.india.malaria.oni2027.mean--> cases at the traditional ONI, also an extrapolation. All malaria figures are **provisional** until the August–October 2026 season is published.
+- **Recorded heat deaths in 2027.** Under December–February 2026–27 traditional ONI scenarios of +1.5, +2.0 and +2.5<!--k:D.outlook.basis_text:sub--> °C, the expected excess is 364 (nominal 95% interval 107–694)<!--k:D.outlook.india.heat.s15.mean-->, 515 (nominal 95% interval 144–1,008)<!--k:D.outlook.india.heat.s20.mean--> or 683 (nominal 95% interval 184–1,362)<!--k:D.outlook.india.heat.s25.mean--> recorded heat deaths. These are **scenarios** until that season is published. Recorded deaths are a fraction of true heat mortality.
+- **How to read these numbers.** They are the expected excess under a common national El Niño association, distributed by each state's usual (baseline) burden. They show where the extra cases are likely to be counted because the disease is already common there; they do **not** show that some states react more strongly to El Niño.
+- **Which ENSO index to follow.** The analysis reached the pre-specified verdict "no index clearly preferred": the data cannot separate the traditional ONI, RONI and the Niño-3.4 anomaly. That is not proof that they are equivalent. Follow CPC's official RONI and the traditional ONI together.
+
+## When
+
+- **Malaria, now and in 2027:** keep surveillance and testing up for the rest of the 2026 post-monsoon season, and plan vector control, testing and drug stocks before the 2027 monsoon, when the carry-over is expected.
+- **Heat, March–June 2027:** have heat action plans ready by March 2027, run them through the April–June hot season, and check the December–February index when it is published in early March, since the heat outlook will then be updated.
+- **Do not expect extra warning time from ENSO forecasts.** Over 20<!--k:D.ew.malaria.jan.n_seasons--> past seasons, models given the observed ONI did not clearly beat models given only a climatological (average) ENSO value: −0.010 (95% CI −0.020 to 0.001)<!--k:D.ew.malaria.perfect_vs_clim--> nats per unit-year for malaria and −0.002 (95% CI −0.015 to 0.011)<!--k:D.ew.heat.perfect_vs_clim--> for recorded heat deaths. So there is no clear ENSO-attributable forecast skill to rely on. For heat, the apparent gain from forecasts issued in June and September is not lead-time skill: it is consistent with the Indian Ocean Dipole term, held at values not yet known at those dates (and still incomplete in November). Rely on routine surveillance, the season calendar and local weather and heat warnings; treat El Niño status as context.
+
+## Where
+
+- **States with the highest combined El Niño health risk** (hazard, burden and vulnerability; a lower rank means higher risk): Bihar (2; 95% interval 1–5), Jharkhand (2; 95% interval 1–5), Uttar Pradesh (3; 95% interval 1–8), Haryana (6; 95% interval 1–19) and Madhya Pradesh (6; 95% interval 2–11)<!--k:D.risk.top5-->.
+- **Ranks are uncertain.** The median 95% interval of a state's rank spans 9<!--k:D.risk.rank_width_median--> places across 32<!--k:D.risk.n_ranked--> ranked units, and the intervals are approximate in both directions: they leave out some sources of error, but they treat neighbouring states' rainfall as independent, which overstates rank changes. States whose intervals overlap should be treated as similar, and a state outside the top five may still be at high risk. Andaman and Nicobar Islands and Lakshadweep are not ranked (NA by rule: no rainfall hazard). In several north-eastern, coastal and island units no heatwave day was recorded in any year, so their heatwave-day hazard component is zero.
+- **Where the extra counts are likely to fall (not a risk ranking).** At the traditional ONI, the largest expected excess malaria counts in 2026 are in Odisha, 17,074 (nominal 95% interval 1,735–38,369)<!--k:D.outlook.OD.malaria.oni2026.mean-->, Chhattisgarh, 9,283 (nominal 95% interval 999–20,954)<!--k:D.outlook.CG.malaria.oni2026.mean-->, and Jharkhand, 9,112 (nominal 95% interval 949–20,990)<!--k:D.outlook.JH.malaria.oni2026.mean-->. At the +2.0<!--k:D.outlook.basis_text:sub--> °C heat scenario, the largest expected excess recorded heat deaths in 2027 are in Andhra Pradesh and Telangana, 108.2 (nominal 95% interval 28.9–223.7)<!--k:D.outlook.AP_TG.heat.s20.mean-->, and Uttar Pradesh, 74.0 (nominal 95% interval 19.1–152.4)<!--k:D.outlook.UP.heat.s20.mean-->.
+
+## Evidence gaps
+
+A rapid review found 8<!--k:D.review.n_included--> India-specific studies of El Niño and health. For other vector-borne diseases, respiratory and other infectious diseases, heat-related illness, child nutrition, mental health and suicide, and all-cause mortality, no India-specific study was identified by this rapid review (three free databases, open full texts only); this does not mean no evidence exists. Surveillance data on these outcomes during 2026–27 would fill real gaps.
+
+*Sources: synthesis results file (every number above is a stored result with its interval); companion state-panel malaria and dengue, birth-outcome and heat analyses (manuscripts under review). The interactive El Niño Health Vulnerability Atlas of India shows all states; its maps draw India's external boundary including areas claimed by India, not authenticated by the Survey of India.*

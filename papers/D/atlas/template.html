@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El Niño Health Vulnerability Atlas of India</title>
+<meta name="description" content="State-level synthesis of El Niño hazard, health burden, vulnerability, early-warning skill and the 2026–27 outlook for India.">
+<style>
+:root {
+  --bg: #fbfaf7; --panel: #ffffff; --ink: #1d1f22; --muted: #575c63; --line: #d9d6cf; --accent: #0b5f8a;
+  --map-stroke: #3a3a3a; --claimed: #b3b3b3; --na: #ececec; --na-hatch: #6e6e6e; --bar: #0072b2; --dot: #1d1f22;
+  --focus: #d55e00; --chip: #eef3f6;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #15171a; --panel: #1e2125; --ink: #ecebe7; --muted: #a9adb3; --line: #3a3e44; --accent: #6fc0ee;
+    --map-stroke: #c9c9c9; --claimed: #6b6b6b; --na: #2b2e33; --na-hatch: #9a9a9a; --bar: #56b4e9; --dot: #ecebe7;
+    --focus: #e69f00; --chip: #263038;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #15171a; --panel: #1e2125; --ink: #ecebe7; --muted: #a9adb3; --line: #3a3e44; --accent: #6fc0ee;
+  --map-stroke: #c9c9c9; --claimed: #6b6b6b; --na: #2b2e33; --na-hatch: #9a9a9a; --bar: #56b4e9; --dot: #ecebe7;
+  --focus: #e69f00; --chip: #263038;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink);
+  font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+header, main, footer { max-width: 1180px; margin: 0 auto; padding: 0 16px; }
+header { padding-top: 20px; }
+h1 { font-size: 1.55rem; line-height: 1.2; margin: 0 0 6px; letter-spacing: -0.01em; }
+h2 { font-size: 1.15rem; margin: 0 0 8px; }
+h3 { font-size: 1rem; margin: 12px 0 6px; }
+p { margin: 0 0 10px; }
+.lede { color: var(--muted); max-width: 70ch; }
+.topbar { display: flex; gap: 8px; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; }
+button, select { font: inherit; color: var(--ink); background: var(--panel); border: 1px solid var(--line);
+  border-radius: 6px; padding: 6px 10px; cursor: pointer; }
+button:focus-visible, select:focus-visible, a:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+section { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px; margin: 14px 0; }
+.grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+@media (min-width: 56em) { .grid { grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); } }
+.layers { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+.layers button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--panel); }
+.options { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 6px; font-size: 0.9rem; }
+.options label { display: inline-flex; flex-wrap: wrap; gap: 6px; align-items: center; max-width: 100%; }
+.options select { max-width: 100%; min-width: 0; }
+#unit-select { width: 16em; }
+#map-wrap { position: relative; }
+#map { width: 100%; height: auto; display: block; touch-action: manipulation; }
+#map path.unit { stroke: var(--map-stroke); stroke-width: 0.6; vector-effect: non-scaling-stroke; cursor: pointer; }
+#map path.unit.jk { stroke: none; }
+#map path.claimed { fill: var(--claimed); stroke: var(--map-stroke); stroke-width: 0.6; vector-effect: non-scaling-stroke; }
+#map path.overlay { pointer-events: none; stroke: none; }
+#map path.unit.sel { stroke: var(--focus); stroke-width: 2.2; }
+/* Ruling Q8: the Jammu and Kashmir fill is never stroked (its edge with the grey claimed area is the LoC/LAC);
+   its selection is drawn on the merged external outline (path.seloutline) instead. */
+#map path.unit.jk, #map path.unit.jk.sel, #map path.unit.jk:hover, #map path.unit.jk:focus, #map path.unit.jk.sel:hover, #map path.unit.jk.sel:focus { stroke: none; }
+#map path:focus, #map path:focus-visible, #map circle:focus, #map circle:focus-visible { outline: none; }
+#map path.seloutline { fill: none; stroke: var(--focus); stroke-width: 2.2; vector-effect: non-scaling-stroke; pointer-events: none; }
+#map circle.marker { stroke: var(--map-stroke); stroke-width: 0.8; vector-effect: non-scaling-stroke; cursor: pointer; }
+#map circle.marker.sel { stroke: var(--focus); stroke-width: 2.2; }
+.legend { font-size: 0.85rem; color: var(--muted); margin-top: 6px; }
+.ramp { height: 12px; border-radius: 3px; border: 1px solid var(--line); margin: 4px 0 2px; }
+.ramp-labels { display: flex; justify-content: space-between; gap: 8px; }
+.keys { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
+.sw { display: inline-block; width: 14px; height: 12px; vertical-align: -2px; margin-right: 4px; border: 1px solid var(--line); }
+.note { font-size: 0.84rem; color: var(--muted); }
+#hover-panel { border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; background: var(--bg); min-height: 120px; }
+#hover-panel h3 { margin-top: 0; }
+#hover-panel dl { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 3px 10px; margin: 0; font-size: 0.88rem; }
+#hover-panel dt { color: var(--muted); }
+#hover-panel dd { margin: 0; overflow-wrap: anywhere; }
+.flag { display: inline-block; font-size: 0.8rem; background: var(--chip); border-radius: 4px; padding: 1px 6px; margin: 2px 4px 2px 0; }
+#rank-bars { display: grid; gap: 2px; }
+.rk { display: grid; grid-template-columns: minmax(0, 11em) minmax(0, 1fr); gap: 8px; align-items: center;
+  background: none; border: 0; border-radius: 4px; padding: 2px 4px; text-align: left; width: 100%; }
+.rk:hover, .rk.sel { background: var(--chip); }
+.rk .nm { font-size: 0.86rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rk .tr { position: relative; height: 16px; }
+.rk .tr .ln { position: absolute; top: 6px; height: 4px; background: var(--bar); border-radius: 2px; }
+.rk .tr .pt { position: absolute; top: 3px; width: 10px; height: 10px; margin-left: -5px; border-radius: 50%; background: var(--dot); }
+.rk .tx { grid-column: 2; font-size: 0.78rem; color: var(--muted); margin-top: -2px; }
+.rk.unranked .tr { display: none; }
+table { border-collapse: collapse; width: 100%; font-size: 0.86rem; }
+.tbl { overflow-x: auto; }
+th, td { text-align: left; padding: 5px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--muted); font-weight: 600; }
+.dl { display: flex; flex-wrap: wrap; gap: 8px; }
+.dl a { color: var(--accent); border: 1px solid var(--line); border-radius: 6px; padding: 5px 9px; text-decoration: none; font-size: 0.9rem; }
+.verdict { font-weight: 600; }
+footer { padding: 6px 16px 30px; }
+@media (max-width: 30em) { table { font-size: 0.8rem; } th, td { padding: 4px 3px; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="topbar">
+    <div>
+      <h1>El Niño Health Vulnerability Atlas of India</h1>
+      <p class="lede">A state-level synthesis of El Niño hazard, health burden and social vulnerability, the
+      skill of archived ENSO forecasts, and the 2026–27 outlook. Estimates from the companion malaria and dengue,
+      birth-outcome and heat analyses (manuscripts under review) are inputs, not new findings.</p>
+    </div>
+    <button id="theme" type="button" aria-label="Switch colour scheme">Theme: auto</button>
+  </div>
+</header>
+<main>
+  <section aria-labelledby="map-h">
+    <h2 id="map-h">Map</h2>
+    <div class="layers" role="group" aria-label="Map layer">
+      <button type="button" data-layer="index" aria-pressed="true">Risk index</button>
+      <button type="button" data-layer="hazard" aria-pressed="false">Hazard</button>
+      <button type="button" data-layer="burden" aria-pressed="false">Burden</button>
+      <button type="button" data-layer="vuln" aria-pressed="false">Vulnerability</button>
+      <button type="button" data-layer="malaria2026" aria-pressed="false">Malaria outlook, 2026</button>
+      <button type="button" data-layer="malaria2027" aria-pressed="false">Malaria outlook, 2027</button>
+      <button type="button" data-layer="heat2027" aria-pressed="false">Heat-death outlook, 2027</button>
+    </div>
+    <div class="options">
+      <label>Malaria index
+        <select id="mal-index"><option value="oni">traditional ONI</option><option value="roni">RONI</option></select></label>
+      <label>Heat scenario (December–February traditional ONI)
+        <select id="heat-scen"><option value="s15"></option><option value="s20" selected></option><option value="s25"></option></select></label>
+      <label>State or territory <select id="unit-select"></select></label>
+    </div>
+    <div class="grid">
+      <div id="map-wrap">
+        <svg id="map" role="img" aria-labelledby="map-title"><title id="map-title">Map of India by state</title></svg>
+        <div class="legend" id="legend"></div>
+      </div>
+      <div>
+        <div id="hover-panel" aria-live="polite"><h3>Select a state or territory</h3>
+          <p class="note">Hover over, tap or choose a unit to see its values.</p></div>
+        <p class="note" id="layer-note"></p>
+      </div>
+    </div>
+    <p class="note">State-level data only: the analysis units of the companion analyses, with merged units drawn as one polygon. India's external
+    boundary drawn to include areas claimed by India (GADM 4.1 disputed-area units, from the GADM 4.1 India, Pakistan
+    and China files); not authenticated by the Survey of India. Grey: areas claimed by India, with no data. Boundaries are
+    shown for analysis only and imply no position on any boundary.</p>
+  </section>
+
+  <section aria-labelledby="rank-h">
+    <h2 id="rank-h">Risk-index ranks and their 95% intervals</h2>
+    <p>Each bar is the 95% interval of a unit's rank over the Monte Carlo draws; the dot is the median rank (the top
+    rank is the highest index). Units whose intervals overlap should not be read as different. The intervals are approximate in both
+    directions: they carry Poisson-type and sampling error only, but they draw neighbouring units' rainfall slopes
+    independently, which overstates rank changes.</p>
+    <p class="note" id="rank-summary"></p>
+    <div id="rank-bars"></div>
+    <p class="note">§ heatwave-day hazard component is a structural zero (no heatwave day in any year). Andaman and
+    Nicobar Islands and Lakshadweep are NA by rule (no rainfall hazard) and are not ranked.</p>
+  </section>
+
+  <section aria-labelledby="idx-h">
+    <h2 id="idx-h">Which ENSO index?</h2>
+    <p>Verdict of the pre-specified rule: <span class="verdict" id="verdict"></span>. With only three pooled outcomes the
+    comparison has very low power: the data cannot separate the traditional ONI, RONI (CPC's official index since
+    February 2026) and the Niño-3.4 anomaly. This does not show that the indices are equivalent.</p>
+    <div class="tbl"><table id="idx-table"><thead><tr><th>Outcome</th><th>traditional ONI</th><th>RONI</th><th>Niño-3.4 anomaly</th></tr></thead><tbody></tbody></table></div>
+    <p class="note">Count outcomes: incidence rate ratio per standard deviation of the index (95% CI). Birth weight and height-for-age
+    are shown but not pooled.</p>
+    <div class="tbl"><table id="pooled-table"><thead><tr><th>Comparison</th><th>Pooled prediction-error difference (verdict basis)</th><th>Pooled association difference</th><th>Direction</th></tr></thead><tbody></tbody></table></div>
+  </section>
+
+  <section aria-labelledby="ew-h">
+    <h2 id="ew-h">Early warning: do ENSO forecasts help?</h2>
+    <p>There is no clear ENSO-attributable forecast skill for either outcome: archived forecasts, and even the observed ONI,
+    did not clearly beat a climatological ENSO value. For recorded heat deaths, the gain over a model without ENSO terms
+    is consistent with the Indian Ocean Dipole term, and at the June and September issues it is not lead-time skill.</p>
+    <div class="tbl"><table id="ew-table"><thead><tr><th>Outcome</th><th>Forecast issue</th><th>Gain over model without ENSO terms</th><th>Gain over a climatological ENSO value</th></tr></thead><tbody></tbody></table></div>
+    <p class="note">Log-score gains in nats per unit-year; above zero is better. Forecast-issue rows show point estimates;
+    their confidence intervals are in the early-warning figure of the paper. At the November issue the September–November
+    Dipole season is still incomplete.</p>
+    <h3>Malaria</h3><p class="note" id="ew-mal-note"></p>
+    <h3>Recorded heat deaths</h3><p class="note" id="ew-heat-note"></p>
+  </section>
+
+  <section aria-labelledby="out-h">
+    <h2 id="out-h">2026–27 outlook</h2>
+    <p>Expected excess under a common national El Niño association, distributed by baseline burden. These are
+    model-based extrapolations, not state-specific sensitivities, and this layer alone does not say which state is most
+    affected. The malaria layer is provisional until the June–September 2026 index is final; the heat layer uses
+    scenarios until the December–February 2026–27 index is published.</p>
+    <p class="note" id="basis"></p>
+    <div class="tbl"><table id="nat-table"><thead><tr><th>India</th><th>Expected excess (nominal 95% interval)</th></tr></thead><tbody></tbody></table></div>
+  </section>
+
+  <section aria-labelledby="rev-h">
+    <h2 id="rev-h">Evidence gaps (rapid review)</h2>
+    <p id="rev-summary"></p>
+    <div class="tbl"><table id="gap-table"><thead><tr><th>Outcome group</th><th>Included India-specific studies</th></tr></thead><tbody></tbody></table></div>
+    <p class="note">A zero means no India-specific study identified by this rapid review (three free databases, open full
+    texts only), not that no evidence exists.</p>
+  </section>
+
+  <section aria-labelledby="dl-h">
+    <h2 id="dl-h">Download the data</h2>
+    <p class="note">The files are generated in your browser from the data embedded in this page; every value is a key of
+    the synthesis results file, with its display text.</p>
+    <div class="dl">
+      <a id="dl-units" href="#" download="atlas_units.csv">Unit values (CSV)</a>
+      <a id="dl-national" href="#" download="atlas_national_and_text.csv">National totals and notes (CSV)</a>
+      <a id="dl-index" href="#" download="atlas_index_and_early_warning.csv">Index comparison and early warning (CSV)</a>
+    </div>
+  </section>
+</main>
+<footer>
+  <p class="note">Draft synthesis; the companion analyses are manuscripts under review. RONI: relative Oceanic Niño
+  Index; ONI: Oceanic Niño Index. Boundaries: GADM 4.1.</p>
+</footer>
+<script type="application/json" id="atlas-data">__ATLAS_DATA__</script>
+<script type="application/json" id="atlas-geo">__ATLAS_GEO__</script>
+<script>
+(function () {
+  "use strict";
+  var D = JSON.parse(document.getElementById("atlas-data").textContent);
+  var G = JSON.parse(document.getElementById("atlas-geo").textContent);
+  var SVGNS = "http://www.w3.org/2000/svg";
+  var byId = {}; D.units.forEach(function (u) { byId[u.id] = u; });
+  var state = { layer: "index", mal: "oni", heat: "s20", sel: null };
+  var VIRIDIS = ["#fde725", "#b5de2b", "#6ece58", "#35b779", "#1f9e89", "#26828e", "#31688e", "#3e4989", "#482878", "#440154"];
+  var MAGMA = ["#fcfdbf", "#feca8d", "#fd9668", "#f1605d", "#cd4071", "#9e2f7f", "#721f81", "#451077", "#1d1147", "#000004"];
+  function T(k) { return D.text[k].display; }
+  function head(s) { return String(s).split(" (")[0]; }
+  function el(tag, attrs, text) { var e = document.createElement(tag); if (attrs) for (var a in attrs) e.setAttribute(a, attrs[a]); if (text !== undefined) e.textContent = text; return e; }
+  function lerp(stops, t) {
+    t = Math.max(0, Math.min(1, t)); var x = t * (stops.length - 1), i = Math.min(stops.length - 2, Math.floor(x)), f = x - i;
+    var a = stops[i], b = stops[i + 1], c = [1, 3, 5].map(function (j) {
+      var p = parseInt(a.substr(j, 2), 16), q = parseInt(b.substr(j, 2), 16); return Math.round(p + (q - p) * f); });
+    return "rgb(" + c.join(",") + ")";
+  }
+
+  // ---------------------------------------------------------------- layers
+  var LAYERS = {
+    index: { label: "Risk index (equal weights)", field: function () { return "index"; }, kind: "score",
+      note: "Mean of the hazard, burden and vulnerability domain scores. Ranks and their 95% intervals are listed below the map." },
+    hazard: { label: "Hazard domain", field: function () { return "hazard"; }, kind: "score",
+      note: "El Niño rainfall loss and excess heatwave days in El Niño-decaying years. Dotted: heatwave-day component a structural zero." },
+    burden: { label: "Burden domain", field: function () { return "burden"; }, kind: "score",
+      note: "Malaria, dengue and recorded heat-death rates and NFHS-5 child stunting and anaemia (state aggregates)." },
+    vuln: { label: "Vulnerability domain", field: function () { return "vuln"; }, kind: "score",
+      note: "Four NFHS-5 state indicators: lowest wealth quintile, no health insurance, unimproved drinking water, female illiteracy." },
+    malaria2026: { label: "Expected excess malaria cases, 2026", field: function () { return "mal_" + state.mal + "2026"; }, kind: "count",
+      note: "Provisional: June–September 2026 index from the May–July to July–September seasons. Common national El Niño association, distributed by baseline burden." },
+    malaria2027: { label: "Expected excess malaria cases, 2027 (one-year lag)", field: function () { return "mal_" + state.mal + "2027"; }, kind: "count",
+      note: "Provisional; the lower bound can fall below zero. Common national El Niño association, distributed by baseline burden." },
+    heat2027: { label: "Expected excess recorded heat deaths, 2027", field: function () { return "heat_" + state.heat; }, kind: "count",
+      note: "Scenario of the December–February 2026–27 traditional ONI, used until that season is published. Common national El Niño association, distributed by baseline burden." }
+  };
+  function entry(u, f) { return u.values[f]; }
+  function num(e) { return (e && typeof e.value === "number") ? e.value : null; }
+
+  // ---------------------------------------------------------------- map
+  var svg = document.getElementById("map");
+  var K = Math.cos(23 * Math.PI / 180), S = 20;
+  function px(c) { return [((c[0] - 67) * K * S).toFixed(1), ((38 - c[1]) * S).toFixed(1)]; }
+  function ring(r) { return "M" + r.map(function (c) { return px(c).join(","); }).join("L") + "Z"; }
+  function pathD(g) {
+    var polys = g.type === "Polygon" ? [g.coordinates] : g.coordinates;
+    return polys.map(function (p) { return p.map(ring).join(""); }).join("");
+  }
+  function bbox(g) {
+    var b = [1e9, 1e9, -1e9, -1e9], polys = g.type === "Polygon" ? [g.coordinates] : g.coordinates;
+    polys.forEach(function (p) { p[0].forEach(function (c) { var q = px(c); b[0] = Math.min(b[0], +q[0]); b[1] = Math.min(b[1], +q[1]); b[2] = Math.max(b[2], +q[0]); b[3] = Math.max(b[3], +q[1]); }); });
+    return b;
+  }
+  var minx = 1e9, miny = 1e9, maxx = -1e9, maxy = -1e9;
+  G.features.forEach(function (f) {
+    var polys = f.geometry.type === "Polygon" ? [f.geometry.coordinates] : f.geometry.coordinates;
+    polys.forEach(function (p) { p[0].forEach(function (c) { var q = px(c); minx = Math.min(minx, +q[0]); maxx = Math.max(maxx, +q[0]); miny = Math.min(miny, +q[1]); maxy = Math.max(maxy, +q[1]); }); });
+  });
+  svg.setAttribute("viewBox", [minx - 4, miny - 4, maxx - minx + 8, maxy - miny + 8].join(" "));
+  var defs = document.createElementNS(SVGNS, "defs");
+  defs.innerHTML = '<pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="var(--na)"/><line x1="0" y1="0" x2="0" y2="6" stroke="var(--na-hatch)" stroke-width="1.4"/></pattern>' +
+    '<pattern id="dots" width="6" height="6" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.2" fill="#1a1a1a" stroke="#ffffff" stroke-width="0.5"/></pattern>';
+  svg.appendChild(defs);
+  var paths = {}, overlays = [], markers = {}, selOutline = null;
+  var SMALL = ["LD", "CH", "PY", "DNH_DD"];          // units too small to see or tap: drawn with a marker too
+  G.features.forEach(function (f) {
+    var id = f.properties.id, p = document.createElementNS(SVGNS, "path");
+    p.setAttribute("d", pathD(f.geometry));
+    if (id === "claimed") {
+      p.setAttribute("class", "claimed");
+      var t = document.createElementNS(SVGNS, "title"); t.textContent = "Area claimed by India: no data"; p.appendChild(t);
+      svg.insertBefore(p, svg.firstChild.nextSibling);
+      selOutline = document.createElementNS(SVGNS, "path");      // merged external outline of Jammu and Kashmir
+      selOutline.setAttribute("d", pathD(f.geometry)); selOutline.setAttribute("class", "seloutline");
+      selOutline.style.display = "none";
+      return;
+    }
+    p.setAttribute("class", "unit" + (id === "JK" ? " jk" : ""));
+    p.setAttribute("tabindex", "0");
+    p.setAttribute("aria-label", byId[id].name);
+    p.dataset.unit = id;
+    p.addEventListener("pointerenter", function () { show(id); });
+    p.addEventListener("click", function () { select(id); });
+    p.addEventListener("focus", function () { select(id); });
+    svg.appendChild(p); paths[id] = p;
+    if (SMALL.indexOf(id) >= 0 && f.properties.marker) {
+      // at the representative point of the unit's largest part (build_atlas.py), never between enclaves
+      var mp = px(f.properties.marker), c = document.createElementNS(SVGNS, "circle");
+      c.setAttribute("cx", mp[0]); c.setAttribute("cy", mp[1]);
+      c.setAttribute("r", "5"); c.setAttribute("class", "marker"); c.setAttribute("tabindex", "0");
+      c.setAttribute("aria-label", byId[id].name); c.dataset.unit = id;
+      c.addEventListener("pointerenter", function () { show(id); });
+      c.addEventListener("click", function () { select(id); });
+      c.addEventListener("focus", function () { select(id); });
+      markers[id] = c;
+    }
+    if (byId[id].structural_zero) {
+      var o = document.createElementNS(SVGNS, "path"); o.setAttribute("d", pathD(f.geometry));
+      o.setAttribute("class", "overlay"); o.setAttribute("fill", "url(#dots)"); o.dataset.unit = id;
+      overlays.push(o);
+    }
+  });
+  overlays.forEach(function (o) { svg.appendChild(o); });
+  Object.keys(markers).forEach(function (k) { svg.appendChild(markers[k]); });
+  if (selOutline) svg.appendChild(selOutline);
+  svg.addEventListener("pointerleave", function () { if (state.sel) show(state.sel); });
+
+  function layerValues() {
+    var L = LAYERS[state.layer], f = L.field();
+    return D.units.map(function (u) { return { u: u, e: entry(u, f), v: num(entry(u, f)) }; });
+  }
+  function tr(v) { return Math.log10(1 + Math.max(0, v)); }
+  function draw() {
+    var L = LAYERS[state.layer], vals = layerValues();
+    var finite = vals.filter(function (x) { return x.v !== null; });
+    var max = Math.max.apply(null, finite.map(function (x) { return x.v; }));
+    var min = Math.min.apply(null, finite.map(function (x) { return x.v; }));
+    vals.forEach(function (x) {
+      var els = [paths[x.u.id]].concat(markers[x.u.id] ? [markers[x.u.id]] : []), fill;
+      if (x.v === null) fill = "url(#hatch)";
+      else fill = lerp(L.kind === "score" ? VIRIDIS : MAGMA, L.kind === "score" ? (x.v - min) / (max - min || 1) : (tr(x.v) - tr(min)) / (tr(max) - tr(min) || 1));
+      els.forEach(function (e) { e.setAttribute("fill", fill); });
+    });
+    overlays.forEach(function (o) { o.style.display = state.layer === "hazard" ? "" : "none"; });
+    // legend: ramp ends labelled with the smallest and largest unit displays (key displays)
+    var lo = finite.filter(function (x) { return x.v === min; })[0], hi = finite.filter(function (x) { return x.v === max; })[0];
+    var stops = (L.kind === "score" ? VIRIDIS : MAGMA).join(",");
+    var lg = document.getElementById("legend"); lg.textContent = "";
+    lg.appendChild(el("div", null, L.label + (L.kind === "count" ? " (logarithmic colour scale; lowest to highest unit)" : " (lowest to highest unit; higher = more)")));
+    var r = el("div", { "class": "ramp" }); r.style.background = "linear-gradient(90deg," + stops + ")"; lg.appendChild(r);
+    var rl = el("div", { "class": "ramp-labels" });
+    rl.appendChild(el("span", null, head(lo.e.display) + " (" + lo.u.name + ")"));
+    rl.appendChild(el("span", null, head(hi.e.display) + " (" + hi.u.name + ")"));
+    lg.appendChild(rl);
+    var keys = el("div", { "class": "keys" });
+    var k1 = el("span"); k1.appendChild(el("span", { "class": "sw", style: "background:var(--claimed)" })); k1.appendChild(document.createTextNode("Area claimed by India: no data")); keys.appendChild(k1);
+    if (vals.some(function (x) { return x.v === null; })) {
+      var k2 = el("span"); var s2 = el("span", { "class": "sw" }); s2.style.background = "repeating-linear-gradient(45deg,var(--na-hatch) 0 2px,var(--na) 2px 5px)"; k2.appendChild(s2);
+      k2.appendChild(document.createTextNode(state.layer === "index" ? "Not ranked: NA by rule (no rainfall hazard)" : "Insufficient data (NA by rule)")); keys.appendChild(k2);
+    }
+    if (state.layer === "hazard") {
+      var k3 = el("span"); var s3 = el("span", { "class": "sw" }); s3.style.background = "radial-gradient(#1a1a1a 1.2px, #ffffff 1.5px, transparent 1.9px) 0 0/5px 5px, var(--na)"; k3.appendChild(s3);
+      k3.appendChild(document.createTextNode("Heatwave-day component a structural zero")); keys.appendChild(k3);
+    }
+    lg.appendChild(keys);
+    document.getElementById("layer-note").textContent = L.note;
+    if (state.sel) show(state.sel);
+  }
+
+  // ---------------------------------------------------------------- hover panel
+  var ROWS = [["Risk index", "index"], ["Rank (95% interval)", "rank"], ["Hazard", "hazard"], ["Burden", "burden"],
+    ["Vulnerability", "vuln"], ["Malaria 2026, traditional ONI", "mal_oni2026"], ["Malaria 2026, RONI", "mal_roni2026"],
+    ["Malaria 2027, traditional ONI", "mal_oni2027"], ["Malaria 2027, RONI", "mal_roni2027"],
+    ["Heat deaths 2027, scenario s15", "heat_s15"], ["Heat deaths 2027, scenario s20", "heat_s20"], ["Heat deaths 2027, scenario s25", "heat_s25"],
+    ["Heat deaths 2027, observed index", "heat_obs"]];
+  var SCEN = {};
+  function show(id) {
+    var u = byId[id], hp = document.getElementById("hover-panel"); hp.textContent = "";
+    hp.appendChild(el("h3", null, u.name));
+    var cur = entry(u, LAYERS[state.layer].field());
+    hp.appendChild(el("p", null, LAYERS[state.layer].label + ": " + cur.display));
+    if (!u.ranked) hp.appendChild(el("span", { "class": "flag" }, "NA by rule (no rainfall hazard): not ranked"));
+    if (u.structural_zero) hp.appendChild(el("span", { "class": "flag" }, "Heatwave-day hazard: structural zero"));
+    var dl = el("dl");
+    ROWS.forEach(function (r) {
+      var lab = r[0].replace(/scenario (s\d\d)/, function (m, s) { return SCEN[s] || m; });
+      dl.appendChild(el("dt", null, lab)); dl.appendChild(el("dd", null, u.values[r[1]].display));
+    });
+    hp.appendChild(dl);
+  }
+  function select(id) {
+    if (state.sel && paths[state.sel]) paths[state.sel].classList.remove("sel");
+    if (state.sel && markers[state.sel]) markers[state.sel].classList.remove("sel");
+    state.sel = id; paths[id].classList.add("sel");
+    if (markers[id]) markers[id].classList.add("sel");
+    if (selOutline) selOutline.style.display = id === "JK" ? "" : "none";
+    document.getElementById("unit-select").value = id;
+    document.querySelectorAll(".rk").forEach(function (b) { b.classList.toggle("sel", b.dataset.unit === id); });
+    show(id);
+  }
+
+  // ---------------------------------------------------------------- controls
+  document.querySelectorAll(".layers button").forEach(function (b) {
+    b.addEventListener("click", function () {
+      state.layer = b.dataset.layer;
+      document.querySelectorAll(".layers button").forEach(function (x) { x.setAttribute("aria-pressed", String(x === b)); });
+      draw();
+    });
+  });
+  document.getElementById("mal-index").addEventListener("change", function (e) { state.mal = e.target.value; draw(); });
+  document.getElementById("heat-scen").addEventListener("change", function (e) { state.heat = e.target.value; draw(); });
+  // heat scenario labels, parsed from the basis text display
+  var m = T("D.outlook.basis_text").match(/ONI of (\+[\d.]+), (\+[\d.]+) and (\+[\d.]+) °C/);
+  ["s15", "s20", "s25"].forEach(function (s, i) {
+    SCEN[s] = (m ? m[i + 1] + " °C" : s) + " scenario";
+    document.querySelector('#heat-scen option[value="' + s + '"]').textContent = m ? m[i + 1] + " °C" : s;
+  });
+  var us = document.getElementById("unit-select");
+  us.appendChild(el("option", { value: "" }, "choose…"));
+  D.units.slice().sort(function (a, b) { return a.name.localeCompare(b.name); }).forEach(function (u) { us.appendChild(el("option", { value: u.id }, u.name)); });
+  us.addEventListener("change", function () { if (us.value) select(us.value); });
+
+  // ---------------------------------------------------------------- rank bars
+  var nRanked = D.text["D.risk.n_ranked"].value;
+  document.getElementById("rank-summary").textContent = "Median width of the 95% rank interval: " + T("D.risk.rank_width_median") +
+    " places across " + T("D.risk.n_ranked") + " ranked units. Highest five by median rank: " + T("D.risk.top5") + ".";
+  var rb = document.getElementById("rank-bars");
+  var ranked = D.units.filter(function (u) { return u.ranked; }).sort(function (a, b) {
+    return a.values.rank.value - b.values.rank.value || b.values.index.value - a.values.index.value; });
+  ranked.concat(D.units.filter(function (u) { return !u.ranked; })).forEach(function (u) {
+    var b = el("button", { type: "button", "class": "rk" + (u.ranked ? "" : " unranked") }); b.dataset.unit = u.id;
+    b.appendChild(el("span", { "class": "nm", title: u.name }, u.name + (u.structural_zero ? " §" : "")));
+    var tr = el("span", { "class": "tr", "aria-hidden": "true" });
+    if (u.ranked) {
+      var lo = u.values.rank_lo.value, hi = u.values.rank_hi.value, md = u.values.rank.value, w = nRanked - 1;
+      var ln = el("span", { "class": "ln" }); ln.style.left = (100 * (lo - 1) / w) + "%"; ln.style.width = Math.max(1, 100 * (hi - lo) / w) + "%"; tr.appendChild(ln);
+      var pt = el("span", { "class": "pt" }); pt.style.left = (100 * (md - 1) / w) + "%"; tr.appendChild(pt);
+    }
+    b.appendChild(tr);
+    b.appendChild(el("span", { "class": "tx" }, u.ranked ? "Rank " + u.values.rank.display : u.values.rank.display + "; NA by rule (no rainfall hazard)"));
+    b.setAttribute("aria-label", u.name + ": rank " + u.values.rank.display);
+    b.addEventListener("click", function () { select(u.id); });
+    rb.appendChild(b);
+  });
+
+  // ---------------------------------------------------------------- tables and text
+  document.getElementById("verdict").textContent = T("D.idx.verdict");
+  var tb = document.querySelector("#idx-table tbody");
+  D.idx.forEach(function (r) {
+    var tr = el("tr"); tr.appendChild(el("td", null, r.label));
+    ["oni", "roni", "nino34"].forEach(function (i) { tr.appendChild(el("td", null, r.cells[i].display)); });
+    tb.appendChild(tr);
+  });
+  var pb = document.querySelector("#pooled-table tbody");
+  [["roni_vs_oni", "RONI vs traditional ONI"], ["nino34_vs_oni", "Niño-3.4 anomaly vs traditional ONI"]].forEach(function (c) {
+    var p = D.pooled[c[0]], tr = el("tr"); tr.appendChild(el("td", null, c[1]));
+    tr.appendChild(el("td", null, p.skill.display)); tr.appendChild(el("td", null, p.effect.display)); tr.appendChild(el("td", null, p.direction.display));
+    pb.appendChild(tr);
+  });
+  var eb = document.querySelector("#ew-table tbody");
+  [["malaria", "Malaria"], ["heat", "Recorded heat deaths"]].forEach(function (o) {
+    D.ew[o[0]].leads.forEach(function (l) {
+      var tr = el("tr"); tr.appendChild(el("td", null, o[1])); tr.appendChild(el("td", null, l.label + (o[0] === "heat" ? (l.lead === "nov" ? " (Dipole season incomplete)" : " (not lead-time skill)") : "")));
+      tr.appendChild(el("td", null, l.gain.display)); tr.appendChild(el("td", null, l.vs_clim.display)); eb.appendChild(tr);
+    });
+    var tr = el("tr"); tr.appendChild(el("td", null, o[1])); tr.appendChild(el("td", null, "Observed ONI (perfect forecast)"));
+    tr.appendChild(el("td", null, T("D.ew." + o[0] + ".perfect.logscore_gain"))); tr.appendChild(el("td", null, T("D.ew." + o[0] + ".perfect_vs_clim"))); eb.appendChild(tr);
+  });
+  document.getElementById("ew-mal-note").textContent = T("D.ew.malaria.note");
+  document.getElementById("ew-heat-note").textContent = T("D.ew.heat.note");
+  document.getElementById("basis").textContent = T("D.outlook.basis_text");
+  var nb = document.querySelector("#nat-table tbody");
+  [["D.outlook.india.malaria.oni2026.mean", "Malaria cases, 2026, traditional ONI (provisional)"],
+   ["D.outlook.india.malaria.roni2026.mean", "Malaria cases, 2026, RONI (provisional)"],
+   ["D.outlook.india.malaria.oni2027.mean", "Malaria cases, 2027, traditional ONI (provisional)"],
+   ["D.outlook.india.malaria.roni2027.mean", "Malaria cases, 2027, RONI (provisional)"],
+   ["D.outlook.india.malaria.oni2026final.mean", "Malaria cases, 2026, final June–September index"],
+   ["D.outlook.india.heat.s15.mean", "s15"], ["D.outlook.india.heat.s20.mean", "s20"], ["D.outlook.india.heat.s25.mean", "s25"],
+   ["D.outlook.india.heat.obs.mean", "Recorded heat deaths, 2027, observed December–February index"]].forEach(function (r) {
+    var tr = el("tr"), lab = /^s\d\d$/.test(r[1]) ? "Recorded heat deaths, 2027, " + SCEN[r[1]] : r[1];
+    tr.appendChild(el("td", null, lab)); tr.appendChild(el("td", null, D.national[r[0]].display)); nb.appendChild(tr);
+  });
+  document.getElementById("rev-summary").textContent = "Searches of " + T("D.review.search_date") + " found " +
+    T("D.review.n_records") + " records; " + T("D.review.n_included") + " India-specific studies were included; outcome-by-region cells with any study: " +
+    T("D.review.gap.n_cells_filled") + ".";
+  var gb = document.querySelector("#gap-table tbody");
+  D.gap.forEach(function (g) {
+    var tr = el("tr"); tr.appendChild(el("td", null, g.label));
+    tr.appendChild(el("td", null, g.value === 0 ? "no India-specific study identified by this rapid review" : g.display)); gb.appendChild(tr);
+  });
+
+  // ---------------------------------------------------------------- CSV downloads (built from the embedded data)
+  function csv(rows) {
+    return rows.map(function (r) { return r.map(function (x) {
+      var s = x === null || x === undefined ? "" : String(x); return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; }).join(","); }).join("\n") + "\n";
+  }
+  function link(id, rows) {
+    var url = URL.createObjectURL(new Blob(["﻿" + csv(rows)], { type: "text/csv;charset=utf-8" }));
+    document.getElementById(id).setAttribute("href", url);
+  }
+  var ur = [["unit_id", "unit_name", "status", "heat_structural_zero", "field", "key", "value", "display"]];
+  D.units.forEach(function (u) { Object.keys(u.values).forEach(function (f) { var e = u.values[f]; ur.push([u.id, u.name, u.status, u.structural_zero, f, e.key, e.value, e.display]); }); });
+  link("dl-units", ur);
+  var nr = [["key", "value", "display"]];
+  Object.keys(D.national).forEach(function (k) { nr.push([k, D.national[k].value, D.national[k].display]); });
+  Object.keys(D.text).forEach(function (k) { nr.push([k, D.text[k].value, D.text[k].display]); });
+  link("dl-national", nr);
+  var ir = [["section", "item", "key", "value", "display"]];
+  D.idx.forEach(function (r) { ["oni", "roni", "nino34"].forEach(function (i) { var e = r.cells[i]; ir.push(["index", r.outcome + " " + i, e.key, e.value, e.display]); }); });
+  Object.keys(D.pooled).forEach(function (c) { ["skill", "effect", "direction"].forEach(function (s) { var e = D.pooled[c][s]; ir.push(["pooled", c + " " + s, e.key, e.value, e.display]); }); });
+  Object.keys(D.ew).forEach(function (o) { D.ew[o].leads.forEach(function (l) { ir.push(["early_warning", o + " " + l.lead + " gain", l.gain.key, l.gain.value, l.gain.display]); ir.push(["early_warning", o + " " + l.lead + " gain_vs_clim", l.vs_clim.key, l.vs_clim.value, l.vs_clim.display]); }); });
+  D.gap.forEach(function (g) { ir.push(["review_gap", g.group, g.key, g.value, g.display]); });
+  link("dl-index", ir);
+
+  // ---------------------------------------------------------------- theme
+  var tbtn = document.getElementById("theme"), modes = ["auto", "light", "dark"], mode = "auto";
+  try { mode = localStorage.getItem("atlas-theme") || "auto"; } catch (e) { mode = "auto"; }
+  function applyTheme() {
+    if (mode === "auto") document.documentElement.removeAttribute("data-theme"); else document.documentElement.setAttribute("data-theme", mode);
+    tbtn.textContent = "Theme: " + mode;
+  }
+  tbtn.addEventListener("click", function () {
+    mode = modes[(modes.indexOf(mode) + 1) % modes.length];
+    try { localStorage.setItem("atlas-theme", mode); } catch (e) { /* storage unavailable */ }
+    applyTheme();
+  });
+  applyTheme();
+  draw();
+})();
+</script>
+</body>
+</html>

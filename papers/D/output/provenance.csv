@@ -1,0 +1,34 @@
+item,value,note
+results_code_commit,39de797,"last commit touching models/D, models/common/R, papers/D/results_keys.md"
+results_code_dirty,FALSE,TRUE if those paths had uncommitted changes when results.json was assembled
+input_manifest_sha256,33255ca91b130dc7df9600a9afe1333b1f82e76e1301caece30a29bdaa682cb0,sha256 (CRLF -> LF) of data/derived/synthesis/input_manifest.csv (pinned A/B/C inputs)
+tag_A,paperA-submitted@8e58d6fa71c0,frozen input tag and its commit
+tag_B,paperB-submitted@cbbb9f24c762,frozen input tag and its commit
+tag_C,paperC-submitted@1253b8a03b24,frozen input tag and its commit
+seed,1,SEED_D (models/D/R/common_d.R)
+n_keys,1870,keys in results.json (= contract)
+review,assembled from papers/D/review/prisma_counts.json,rapid-review keys (section 5)
+outlook,malaria provisional (ASO 2026 not published); heat scenarios (DJF 2026-27 not published); last published season JAS 2026,outlook publication status (section 4)
+input:data/derived/synthesis/input_manifest.csv,33255ca91b130dc7df9600a9afe1333b1f82e76e1301caece30a29bdaa682cb0,sha256; equals its committed blob (git status clean)
+input:data/derived/synthesis/index_effects_harvest.csv,0bbb91e081240140b29cd9dbac11c1f799ee37cdd78a890c817f6869fca1045f,sha256; equals its committed blob (git status clean)
+input:data/derived/synthesis/outlook_harvest.csv,3969c01e6624ffe231721ade4ae19d0d333b1ea171c985ded075e6722a07976b,sha256; equals its committed blob (git status clean)
+input:data/derived/synthesis/enso_forecasts.csv,c1885b5aebe3d4cfb1d6222f6746e3bf7e4946affb2199738372b0c67388d7f2,sha256; equals its committed blob (git status clean)
+input:data/derived/synthesis/enso_forecasts_iri_avg.csv,e69239e09b9320a885b40e95da4d654e8fb7e65e4d7e535660a0abc355f967f2,sha256; equals its committed blob (git status clean)
+input:data/derived/synthesis/nfhs5_state_indicators.csv,adad995751a7fefa99ff7124ca0f0b89eb4fcd5949751cc8bb7a9dbeb3cb561b,sha256; equals its committed blob (git status clean)
+input:data/derived/enso_annual.csv,5c7251e5cc6aca1579b7bb8d460586c9ca7760ffae38246fa872d7c5f378a0d7,sha256; equals its committed blob (git status clean)
+input:data/derived/enso_monthly.csv,711f13c9387116d9b0d084ac36cc808036d2ca854b0f43e8a4228ea51ab83556,sha256; equals its committed blob (git status clean)
+input:data/derived/climate_district_year.csv,652e20cfab81a58865b551a61a50c1db891b47f73f058b796224b7a341ba66c3,sha256; equals its committed blob (git status clean)
+input:data/derived/climate_unit_year.csv,f443ca7d04e28cae0094d670f8691662974c0eec0e43fbcdb256eae907867aec,sha256; equals its committed blob (git status clean)
+input:data/derived/nfhs/child_counts_by_state_round.csv,25fbe446605dd162ca874784c90164d810a5aafc58c779d920a42959537c323e,sha256; equals its committed blob (git status clean)
+input:pipeline/reference/state_frame.csv,c8634ff7c37a7bae1e2b5538d95c11017ddac518dab3866d6a3ef1afa2f4acea,sha256; equals its committed blob (git status clean)
+input:papers/D/output/index_refits_A.csv,4ecdb4180ccb27fd9af7616aacd47d698c476108eb1bbd746d69a2b80a056a67,sha256; equals its committed blob (git status clean)
+input:papers/D/output/index_refits_A_checks.csv,e213ebafb24820807c04e932bef2714b37c9c4a7d76b4007662ed4ff5b1dd998,sha256; equals its committed blob (git status clean)
+input:data/derived/model/dengue_model.csv,3a3d3b7a4bba86c4c5eae3d60399d6fca4ce1e474e7c28f0aed8e438a550ad93,sha256; equals its committed blob (git status clean)
+input:data/derived/model/farmers_model.csv,38306a74758ad0f8632347355db7a167c684579b213f0543df7dffa21d119337,sha256; equals its committed blob (git status clean)
+input:data/derived/model/folds_decaying.csv,bf51386cec8af978cba98b1520b6972086dff35607f48696570f30d3cd5f7bb1,sha256; equals its committed blob (git status clean)
+input:data/derived/model/folds_developing.csv,e829c0e5da27126082e1d9be316aceb7021fe1d0769ef0d7b32314a78fc211e5,sha256; equals its committed blob (git status clean)
+input:data/derived/model/foodgrain_model.csv,f65c539cc27a278a97c4e6e66fe850631b64d730117c1e167f0377c134fa5adc,sha256; equals its committed blob (git status clean)
+input:data/derived/model/heat_model.csv,73623e38029f5db2f9d48adc5c6348bd5a8727bf8de375183b6edc1d2992771c,sha256; equals its committed blob (git status clean)
+input:data/derived/model/malaria_model.csv,a8ad287e9d411bf55a0a281979cdadc20a7ef44710a30ab373a6f08d9bf76384,sha256; equals its committed blob (git status clean)
+input:data/derived/model/population_2001_2027.csv,bd5e2eca4e630fe55878c8db1467be3a7dcd4308304f081786b6c5b31acaa6bb,sha256; equals its committed blob (git status clean)
+input:data/external/gadm41_IND.gpkg,da586d57875ca7326498a87aeb37bb1573b7842f24217b00bc459a878dd1f0ca,sha256; raw sha256 equals data/MANIFEST.csv

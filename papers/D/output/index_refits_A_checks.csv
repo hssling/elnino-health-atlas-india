@@ -1,0 +1,90 @@
+check,value,reference,abs_diff,tol,pass,binding
+malaria oni IRR lag 0 = A.malaria.primary.irr_oni_lag0,1.14183619635196,1.14183619635196,2.22044604925031e-16,1e-06,TRUE,TRUE
+malaria oni IRR lag 1 = A.malaria.primary.irr_oni_lag1,1.06637447372148,1.06637447372148,1.11022302462516e-15,1e-06,TRUE,TRUE
+malaria roni IRR lag 0 = A.malaria.sens.roni.irr_lag0,1.1333896263674,1.1333896263674,1.33226762955019e-15,1e-06,TRUE,TRUE
+malaria roni IRR lag 1 = A.malaria.sens.roni.irr_lag1,1.06127748188943,1.06127748188943,1.11022302462516e-15,1e-06,TRUE,TRUE
+dengue oni IRR lag 0 = A.dengue.primary.irr_oni_lag0,1.2812952127443,1.2812952127443,6.66133814775094e-16,1e-06,TRUE,TRUE
+dengue oni IRR lag 1 = A.dengue.primary.irr_oni_lag1,1.13301941805853,1.13301941805853,8.88178419700125e-16,1e-06,TRUE,TRUE
+malaria Wald p ONI lag 0 = A.malaria.primary.p_oni_lag0,0.0280942702397892,0.0280942702397892,2.77555756156289e-17,1e-06,TRUE,TRUE
+malaria n = A.malaria.primary.n,782,782,0,0,TRUE,TRUE
+dengue n = A.dengue.primary.n,630,630,0,0,TRUE,TRUE
+malaria oni AIC = model_fits.csv malaria_primary,14272.0379885468,14272,0.037988546770066,0.05,TRUE,TRUE
+malaria oni RE used (diag) = model_fits.csv (diag),0,0,0,0,TRUE,TRUE
+malaria roni AIC = model_fits.csv malaria_index_roni,14273.3357869744,14273.3,0.0357869743857009,0.05,TRUE,TRUE
+malaria roni RE used (diag) = model_fits.csv (diag),0,0,0,0,TRUE,TRUE
+malaria nino34 AIC = model_fits.csv malaria_index_nino34,14272.783807695,14272.8,0.0161923049563484,0.05,TRUE,TRUE
+malaria nino34 RE used (diag) = model_fits.csv (diag),0,0,0,0,TRUE,TRUE
+dengue oni AIC = model_fits.csv dengue_primary,9759.34019072216,9759.3,0.0401907221621514,0.05,TRUE,TRUE
+dengue oni RE used (us) = model_fits.csv (us),0,0,0,0,TRUE,TRUE
+malaria oni loeo_male = index_comparison.csv,0.766879740106867,0.767,0.000120259893133245,5e-04,TRUE,TRUE
+malaria oni loeo_male_noenso = index_comparison.csv,0.76264251957978,0.763,0.000357480420219769,5e-04,TRUE,TRUE
+malaria oni roll_male = index_comparison.csv,0.948829940187298,0.949,0.000170059812701462,5e-04,TRUE,TRUE
+malaria oni roll_male_noenso = index_comparison.csv,0.947767489044027,0.948,0.000232510955972987,5e-04,TRUE,TRUE
+malaria oni loeo_n = index_comparison.csv,510,510,0,0,TRUE,TRUE
+malaria oni roll_n = index_comparison.csv,374,374,0,0,TRUE,TRUE
+malaria roni loeo_male = index_comparison.csv,0.772332773270063,0.772,0.000332773270062869,5e-04,TRUE,TRUE
+malaria roni loeo_male_noenso = index_comparison.csv,0.76264251957978,0.763,0.000357480420219769,5e-04,TRUE,TRUE
+malaria roni roll_male = index_comparison.csv,0.966024107558581,0.966,2.41075585806216e-05,5e-04,TRUE,TRUE
+malaria roni roll_male_noenso = index_comparison.csv,0.947767489044027,0.948,0.000232510955972987,5e-04,TRUE,TRUE
+malaria roni loeo_n = index_comparison.csv,510,510,0,0,TRUE,TRUE
+malaria roni roll_n = index_comparison.csv,374,374,0,0,TRUE,TRUE
+malaria nino34 loeo_male = index_comparison.csv,0.767754179054709,0.768,0.000245820945290909,5e-04,TRUE,TRUE
+malaria nino34 loeo_male_noenso = index_comparison.csv,0.76264251957978,0.763,0.000357480420219769,5e-04,TRUE,TRUE
+malaria nino34 roll_male = index_comparison.csv,0.959252820178176,0.959,0.000252820178176294,5e-04,TRUE,TRUE
+malaria nino34 roll_male_noenso = index_comparison.csv,0.947767489044027,0.948,0.000232510955972987,5e-04,TRUE,TRUE
+malaria nino34 loeo_n = index_comparison.csv,510,510,0,0,TRUE,TRUE
+malaria nino34 roll_n = index_comparison.csv,374,374,0,0,TRUE,TRUE
+malaria oni LOEO log score (ONI) = compare_per_split_index.csv weighted mean,9.29471241879946,9.29466666666667,4.57521327916766e-05,5e-04,TRUE,TRUE
+malaria oni LOEO log score (noENSO) = compare_per_split_index.csv weighted mean,9.30596700094587,9.3058,0.000167000945868523,5e-04,TRUE,TRUE
+malaria roni LOEO log score (RONI) = compare_per_split_index.csv weighted mean,9.30910205570051,9.30906666666667,3.53890338455898e-05,5e-04,TRUE,TRUE
+malaria roni LOEO log score (noENSO) = compare_per_split_index.csv weighted mean,9.30596700094587,9.3058,0.000167000945868523,5e-04,TRUE,TRUE
+malaria nino34 LOEO log score (NINO34) = compare_per_split_index.csv weighted mean,9.29839274204279,9.29833333333333,5.94087094540896e-05,5e-04,TRUE,TRUE
+malaria nino34 LOEO log score (noENSO) = compare_per_split_index.csv weighted mean,9.30596700094587,9.3058,0.000167000945868523,5e-04,TRUE,TRUE
+A cache cmp_idx_oni_loeo: same per-split rows and y (inputs match),0,0,0,0,TRUE,FALSE
+A cache cmp_idx_oni_loeo: max |mu| relative difference,0,0,0,1e-06,TRUE,FALSE
+A cache cmp_idx_oni_loeo: noENSO male,0.76264251957978,0.76264251957978,0,1e-06,TRUE,FALSE
+A cache cmp_idx_oni_loeo: noENSO log_score,9.30596700094587,9.30596700094587,0,1e-06,TRUE,FALSE
+A cache cmp_idx_oni_loeo: ONI male,0.766879740106867,0.766879740106867,0,1e-06,TRUE,FALSE
+A cache cmp_idx_oni_loeo: ONI log_score,9.29471241879946,9.29471241879946,0,1e-06,TRUE,FALSE
+A cache cmp_idx_oni_roll: same per-split rows and y (inputs match),0,0,0,0,TRUE,FALSE
+A cache cmp_idx_oni_roll: max |mu| relative difference,0,0,0,1e-06,TRUE,FALSE
+A cache cmp_idx_oni_roll: noENSO male,0.947767489044027,0.947767489044027,0,1e-06,TRUE,FALSE
+A cache cmp_idx_oni_roll: noENSO log_score,8.73794091806175,8.73794091806175,0,1e-06,TRUE,FALSE
+A cache cmp_idx_oni_roll: ONI male,0.948829940187298,0.948829940187298,0,1e-06,TRUE,FALSE
+A cache cmp_idx_oni_roll: ONI log_score,8.75046108039402,8.75046108039402,0,1e-06,TRUE,FALSE
+A cache cmp_idx_roni_loeo: same per-split rows and y (inputs match),0,0,0,0,TRUE,FALSE
+A cache cmp_idx_roni_loeo: max |mu| relative difference,0,0,0,1e-06,TRUE,FALSE
+A cache cmp_idx_roni_loeo: noENSO male,0.76264251957978,0.76264251957978,0,1e-06,TRUE,FALSE
+A cache cmp_idx_roni_loeo: noENSO log_score,9.30596700094587,9.30596700094587,0,1e-06,TRUE,FALSE
+A cache cmp_idx_roni_loeo: RONI male,0.772332773270063,0.772332773270063,0,1e-06,TRUE,FALSE
+A cache cmp_idx_roni_loeo: RONI log_score,9.30910205570051,9.30910205570051,0,1e-06,TRUE,FALSE
+A cache cmp_idx_roni_roll: same per-split rows and y (inputs match),0,0,0,0,TRUE,FALSE
+A cache cmp_idx_roni_roll: max |mu| relative difference,0,0,0,1e-06,TRUE,FALSE
+A cache cmp_idx_roni_roll: noENSO male,0.947767489044027,0.947767489044027,0,1e-06,TRUE,FALSE
+A cache cmp_idx_roni_roll: noENSO log_score,8.73794091806175,8.73794091806175,0,1e-06,TRUE,FALSE
+A cache cmp_idx_roni_roll: RONI male,0.966024107558581,0.966024107558581,0,1e-06,TRUE,FALSE
+A cache cmp_idx_roni_roll: RONI log_score,8.86298674355563,8.86298674355563,0,1e-06,TRUE,FALSE
+A cache cmp_idx_nino34_loeo: same per-split rows and y (inputs match),0,0,0,0,TRUE,FALSE
+A cache cmp_idx_nino34_loeo: max |mu| relative difference,0,0,0,1e-06,TRUE,FALSE
+A cache cmp_idx_nino34_loeo: noENSO male,0.76264251957978,0.76264251957978,0,1e-06,TRUE,FALSE
+A cache cmp_idx_nino34_loeo: noENSO log_score,9.30596700094587,9.30596700094587,0,1e-06,TRUE,FALSE
+A cache cmp_idx_nino34_loeo: NINO34 male,0.767754179054709,0.767754179054709,0,1e-06,TRUE,FALSE
+A cache cmp_idx_nino34_loeo: NINO34 log_score,9.29839274204279,9.29839274204279,0,1e-06,TRUE,FALSE
+A cache cmp_idx_nino34_roll: same per-split rows and y (inputs match),0,0,0,0,TRUE,FALSE
+A cache cmp_idx_nino34_roll: max |mu| relative difference,0,0,0,1e-06,TRUE,FALSE
+A cache cmp_idx_nino34_roll: noENSO male,0.947767489044027,0.947767489044027,0,1e-06,TRUE,FALSE
+A cache cmp_idx_nino34_roll: noENSO log_score,8.73794091806175,8.73794091806175,0,1e-06,TRUE,FALSE
+A cache cmp_idx_nino34_roll: NINO34 male,0.959252820178176,0.959252820178176,0,1e-06,TRUE,FALSE
+A cache cmp_idx_nino34_roll: NINO34 log_score,8.78574260492806,8.78574260492806,0,1e-06,TRUE,FALSE
+A cache fits.rds malaria_primary: IRR lag 0,1.14183619635196,1.14183619635196,0,1e-06,TRUE,FALSE
+A cache fits.rds malaria_primary: IRR lag 1,1.06637447372148,1.06637447372148,0,1e-06,TRUE,FALSE
+A cache fits.rds malaria_index_roni: IRR lag 0,1.1333896263674,1.1333896263674,0,1e-06,TRUE,FALSE
+A cache fits.rds malaria_index_roni: IRR lag 1,1.06127748188943,1.06127748188943,0,1e-06,TRUE,FALSE
+A cache fits.rds malaria_index_nino34: IRR lag 0,1.12629967316632,1.12629967316632,0,1e-06,TRUE,FALSE
+A cache fits.rds malaria_index_nino34: IRR lag 1,1.05720169758844,1.05720169758844,0,1e-06,TRUE,FALSE
+A cache fits.rds dengue_primary: IRR lag 0,1.2812952127443,1.2812952127443,0,1e-06,TRUE,FALSE
+A cache fits.rds dengue_primary: IRR lag 1,1.13301941805853,1.13301941805853,0,1e-06,TRUE,FALSE
+malaria loeo no-ENSO MALE identical across the three index comparisons,0,0,0,1e-12,TRUE,FALSE
+malaria roll no-ENSO MALE identical across the three index comparisons,0,0,0,1e-12,TRUE,FALSE
+dengue loeo no-ENSO MALE identical across the three index comparisons,0,0,0,1e-12,TRUE,FALSE
+dengue roll no-ENSO MALE identical across the three index comparisons,0,0,0,1e-12,TRUE,FALSE

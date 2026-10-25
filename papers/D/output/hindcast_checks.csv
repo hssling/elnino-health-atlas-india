@@ -1,0 +1,39 @@
+outcome,check,pass,detail,binding
+all,git diff paperA-submitted -- models/A models/C models/common/R empty,TRUE,"no diff, no untracked file",TRUE
+all,git diff paperC-submitted -- models/A models/C models/common/R empty,TRUE,"no diff, no untracked file",TRUE
+all,sha256 data/derived/model/dengue_model.csv = blob at paperA-submitted,TRUE,3a3d3b7a4bba86c4c5eae3d60399d6fca4ce1e474e7c28f0aed8e438a550ad93,TRUE
+all,sha256 data/derived/model/farmers_model.csv = blob at paperA-submitted,TRUE,38306a74758ad0f8632347355db7a167c684579b213f0543df7dffa21d119337,TRUE
+all,sha256 data/derived/model/folds_decaying.csv = blob at paperA-submitted,TRUE,bf51386cec8af978cba98b1520b6972086dff35607f48696570f30d3cd5f7bb1,TRUE
+all,sha256 data/derived/model/folds_developing.csv = blob at paperA-submitted,TRUE,e829c0e5da27126082e1d9be316aceb7021fe1d0769ef0d7b32314a78fc211e5,TRUE
+all,sha256 data/derived/model/foodgrain_model.csv = blob at paperA-submitted,TRUE,f65c539cc27a278a97c4e6e66fe850631b64d730117c1e167f0377c134fa5adc,TRUE
+all,sha256 data/derived/model/heat_model.csv = blob at paperA-submitted,TRUE,73623e38029f5db2f9d48adc5c6348bd5a8727bf8de375183b6edc1d2992771c,TRUE
+all,sha256 data/derived/model/malaria_model.csv = blob at paperA-submitted,TRUE,a8ad287e9d411bf55a0a281979cdadc20a7ef44710a30ab373a6f08d9bf76384,TRUE
+all,sha256 data/derived/model/population_2001_2027.csv = blob at paperA-submitted,TRUE,bd5e2eca4e630fe55878c8db1467be3a7dcd4308304f081786b6c5b31acaa6bb,TRUE
+all,sha256 data/derived/model/dengue_model.csv = blob at paperC-submitted,TRUE,3a3d3b7a4bba86c4c5eae3d60399d6fca4ce1e474e7c28f0aed8e438a550ad93,TRUE
+all,sha256 data/derived/model/farmers_model.csv = blob at paperC-submitted,TRUE,38306a74758ad0f8632347355db7a167c684579b213f0543df7dffa21d119337,TRUE
+all,sha256 data/derived/model/folds_decaying.csv = blob at paperC-submitted,TRUE,bf51386cec8af978cba98b1520b6972086dff35607f48696570f30d3cd5f7bb1,TRUE
+all,sha256 data/derived/model/folds_developing.csv = blob at paperC-submitted,TRUE,e829c0e5da27126082e1d9be316aceb7021fe1d0769ef0d7b32314a78fc211e5,TRUE
+all,sha256 data/derived/model/foodgrain_model.csv = blob at paperC-submitted,TRUE,f65c539cc27a278a97c4e6e66fe850631b64d730117c1e167f0377c134fa5adc,TRUE
+all,sha256 data/derived/model/heat_model.csv = blob at paperC-submitted,TRUE,73623e38029f5db2f9d48adc5c6348bd5a8727bf8de375183b6edc1d2992771c,TRUE
+all,sha256 data/derived/model/malaria_model.csv = blob at paperC-submitted,TRUE,a8ad287e9d411bf55a0a281979cdadc20a7ef44710a30ab373a6f08d9bf76384,TRUE
+all,sha256 data/derived/model/population_2001_2027.csv = blob at paperC-submitted,TRUE,bd5e2eca4e630fe55878c8db1467be3a7dcd4308304f081786b6c5b31acaa6bb,TRUE
+malaria,"target-year alignment: cor(may-issued forecast mean, observed index) over S_o > 0.7 (T7-M1)",TRUE,r = 0.8580 over 20 seasons,TRUE
+malaria,"refit Model C reproduces compare_models' Model C predictions (mu, theta, y; same rows)",TRUE,"rows cm 634 / refit 634 / union 634; max rel diff mu 0, theta 0; y diff 0",TRUE
+malaria,compare_models: no model flagged (>10% failed refits),TRUE,none,TRUE
+malaria,refit path: no failed split,TRUE,none,TRUE
+malaria,row log score of Model B = compare_models summary log_score,TRUE,8.8629944574 vs 8.8629944574,TRUE
+malaria,row log score of Model C = compare_models summary log_score,TRUE,8.8798121348 vs 8.8798121348,TRUE
+malaria,every season of S_o has scored unit-years,TRUE,"scored seasons 20, |S_o| 20",TRUE
+malaria,forecast source iri scored on every row of its seasons at every lead,TRUE,"rows needed 634; got jan=634,mar=634,may=634",TRUE
+malaria,forecast source climatology scored on every row of its seasons at every lead,TRUE,rows needed 634; got clim=634,TRUE
+malaria,forecast source iriavg scored on every row of its seasons at every lead,TRUE,"rows needed 634; got jan=634,mar=634,may=634",TRUE
+heat,"target-year alignment: cor(nov-issued forecast mean, observed index) over S_o > 0.7 (T7-M1)",TRUE,r = 0.9467 over 20 seasons,TRUE
+heat,"refit Model C reproduces compare_models' Model C predictions (mu, theta, y; same rows)",TRUE,"rows cm 680 / refit 680 / union 680; max rel diff mu 0, theta 0; y diff 0",TRUE
+heat,compare_models: no model flagged (>10% failed refits),TRUE,none,TRUE
+heat,refit path: no failed split,TRUE,none,TRUE
+heat,row log score of Model B = compare_models summary log_score,TRUE,2.5382584428 vs 2.5382584428,TRUE
+heat,row log score of Model C = compare_models summary log_score,TRUE,2.4964676872 vs 2.4964676872,TRUE
+heat,every season of S_o has scored unit-years,TRUE,"scored seasons 20, |S_o| 20",TRUE
+heat,forecast source iri scored on every row of its seasons at every lead,TRUE,"rows needed 680; got jun=680,sep=680,nov=680",TRUE
+heat,forecast source climatology scored on every row of its seasons at every lead,TRUE,rows needed 680; got clim=680,TRUE
+heat,forecast source iriavg scored on every row of its seasons at every lead,TRUE,"rows needed 680; got jun=680,sep=680,nov=680",TRUE
